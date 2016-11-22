@@ -12,6 +12,16 @@ pages:
     - Configuration: start/configuration.md
     - Troubleshooting: start/troubleshooting.md
     - FAQ: start/faq.md
+    - Sizing Guide:
+        - Introduction: sizing/introduction.md
+        - Sizing Questions: sizing/sizing_questions.md
+        - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
+        - Rule of thumb: sizing/rule_of_thumb.md
+        - Appendix A - Asset Manager Browser benchmark performance test results: sizing/appendix_a.md
+        - Appendix B - Asset Manager Browser processing capability test results : sizing/appendix_b.md
+        - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
+        - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
+        - Appendix E - Links : sizing/appendix_e.md
 - Features:
     - Search: features/search.md
     - Insight: features/insight.md
@@ -19,8 +29,9 @@ pages:
     - Builder: features/builder.md
     - Graph: features/graph.md
     - Adapter: features/adpater.md
-- Slack: slack.md
-- Blogs: blogs.md
+- Community:
+    - Slack: slack.md
+    - Blogs: blogs.md
 
 theme_dir: 'flatly'
 # theme: readthedocs
