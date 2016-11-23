@@ -1,7 +1,7 @@
 # Appendix A - Asset Manager Browser benchmark sample performance (2,000 users) test results
 
 #### Asset Manager Browser benchmark sample performance (2,000 users) test results
-The goal of the benchmark test was to determine the system performance with 1,000 concurrent users.
+The goal of the benchmark test was to determine the system performance with 2,000 concurrent users.
 
 #### Deployment diagram
 For 2,000 concurrent users, our test environment contains 8 Asset Manager Rest Service servers and 4 Asset Manager Browser servers on four machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
