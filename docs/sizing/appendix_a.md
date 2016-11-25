@@ -12,8 +12,6 @@ For 2,000 concurrent users, our test environment contains 8 Asset Manager Rest S
 Performance tests are executed on virtual machines except the database.
 The following table describes the configurations of servers for the 2,000 user benchmark test.
 
-
-
 | ID | Usage                                                            | Type             | Operation system | CPU                                   | Memory |
 |----|------------------------------------------------------------------|------------------|------------------|---------------------------------------|--------|
 | 1  | AM Rest Server                                                   | Virtual Machine  | Windows 2012 R2  | Intel E5 2680 v3@ 2.50 GHz x 8 Cores  | 16 GB  |
@@ -41,7 +39,7 @@ All tests were run on the following software set:
 #### Setup and Tuning
 Tuning made before test:
 
-Please find in "appendix" for more details.
+Please find in "[appendix](appendix_c.md)" for more details.
 
 
 #### Test Data
@@ -67,22 +65,22 @@ Test data includes:
 
 
 #### Load Test Scenario Setting
-* Test will be executed for more than 80 minutes.
-* Detailed scenario setting:
+- Test will be executed for more than 80 minutes.
+- Detailed scenario setting:
 
-|    User Scenario    |    User Count    |    Peak   Duration    |    Start Time    |    Think   Time        |    Ramp-up Rate                                            |
-|---------------------|------------------|-----------------------|------------------|------------------------|------------------------------------------------------------|
-| AM Browser View     |    2000          |    40 min             |    +0:00:00      |    25 ~ 35s, random    |    24 users every 15 seconds (shared with all scenario)    |
+    |    User Scenario    |    User Count    |    Peak   Duration    |    Start Time    |    Think   Time        |    Ramp-up Rate                                            |
+    |---------------------|------------------|-----------------------|------------------|------------------------|------------------------------------------------------------|
+    | AM Browser View     |    2000          |    40 min             |    +0:00:00      |    25 ~ 35s, random    |    24 users every 15 seconds (shared with all scenario)    |
 
 
 #### Test statistics for 2,000 concurrent user tests
-Maximum running Vusers:  2,000
-![Running_Users](../img/sizing/2ku_Running_Users.png)
+- Maximum running Vusers:  2,000
+    ![Running_Users](../img/sizing/2ku_Running_Users.png)
 
-Average Hit Per Second: 117.509
-Maximum: 160
+- Average Hit Per Second: 117.509
+- Maximum: 160
 
-![Hit_Per_Second](../img/sizing/2ku_HPS.png)
+    ![Hit_Per_Second](../img/sizing/2ku_HPS.png)
 
 
 
