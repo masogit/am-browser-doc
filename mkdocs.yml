@@ -33,8 +33,8 @@ pages:
     - Slack: slack.md
     - Blogs: blogs.md
 
-# theme_dir: 'flatly'
-theme: readthedocs
+theme_dir: 'flatly'
+# theme: readthedocs
 # theme: Bootstrap
 
 extra_css: [hpe.css]
