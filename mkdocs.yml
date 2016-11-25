@@ -12,7 +12,7 @@ pages:
     - Configuration: start/configuration.md
     - Troubleshooting: start/troubleshooting.md
     - FAQ: start/faq.md
-    - Sizing Guide:
+    - Sizing Guide: 
         - Introduction: sizing/introduction.md
         - Sizing Questions: sizing/sizing_questions.md
         - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
@@ -33,7 +33,8 @@ pages:
     - Slack: slack.md
     - Blogs: blogs.md
 
-theme_dir: 'flatly'
-# theme: readthedocs
+# theme_dir: 'flatly'
+theme: readthedocs
+# theme: Bootstrap
 
 extra_css: [hpe.css]

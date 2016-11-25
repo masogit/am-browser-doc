@@ -51,13 +51,6 @@ server {
         }
 
 }
-
-
-
-
-
-
-
 ```
 
 #### Asset Manager Browser
@@ -130,9 +123,6 @@ server {
         }
 
 }
-
-
-
 ```
 
 

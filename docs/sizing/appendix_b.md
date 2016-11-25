@@ -4,13 +4,13 @@ As an online transaction processing systems, the peak processing capability are 
 #### Result Summary
 
 
-| User Scenario                                     | No. of Server Instances                                          | Process capability (hits per second) |
+| User Scenario                                     | No. of Server Instances                                          |Process capability (peak hits per second)|
 |---------------------------------------------------|------------------------------------------------------------------|--------------------------------------|
 | View Scenario                                     | 1B* + 1R                                                          | 114                                  |
 | View Scenario                                     | 1B + 2R                                                          | 210                                  |
 | View Scenario                                     | 1B + 4R                                                          | 207                                  |
-| View Scenario                                     | 2B + 4R                                                          | 358                                  |
-| View Scenario                                     | 4B + 4R                                                          | 537                                  |
+| View Scenario                                     | 2B + 4R                                                          | 400                                  |
+| View Scenario                                     | 4B + 4R                                                          | 458                                  |
 
 
 *B: Browser Server
@@ -56,7 +56,7 @@ All tests were run on the following software set:
 #### Setup and Tuning
 Tuning made before test:
 
-Please find in "appendix" for more details.
+Please find in "[appendix](appendix_c.md)" for more details.
 
 
 #### Test Data
@@ -92,16 +92,18 @@ Test data includes:
 #### Test results
 Processing speed details
 
-| User Scenario                                     | No. of Server Instances                                          | Process capability (hits per second) |
+| User Scenario                                     | No. of Server Instances                                          |Process capability (peak hits per second)|
 |---------------------------------------------------|------------------------------------------------------------------|--------------------------------------|
-| View Scenario                                     | 1B* + 1R*                                                        | 114                                  |
+| View Scenario                                     | 1B* + 1R                                                          | 114                                  |
 | View Scenario                                     | 1B + 2R                                                          | 210                                  |
 | View Scenario                                     | 1B + 4R                                                          | 207                                  |
-| View Scenario                                     | 2B + 4R                                                          | 358                                  |
-| View Scenario                                     | 4B + 4R                                                          | 537                                  |
+| View Scenario                                     | 2B + 4R                                                          | 400                                  |
+| View Scenario                                     | 4B + 4R                                                          | 458                                  |
 
 #### Conclusions
 The processing capability of Asset Manager Rest Server is about 100 hit per second. 
 The processing capability of Asset Manager Browser Server is about 200 hit per second. 
+The servers will get best performance if the load are below the maximum processing capability.
 Tests proved that the capability can be increased as you add more additional server instances. 
+
 For higher capability or scaling related performance issues such as locking or dead locking, please refer to the tuning section in Help Server.
