@@ -5,6 +5,7 @@ The goal of the benchmark test was to determine the system performance with 2,00
 
 #### Deployment diagram
 For 2,000 concurrent users, our test environment contains 8 Asset Manager Rest Service servers and 4 Asset Manager Browser servers on four machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
+(Central database for Asset Manager Browser is deployed with Oracle database.)
 
 ![AMB_Benchmark](../img/sizing/AMB_1.1_2000_BM.png)
 
@@ -21,7 +22,6 @@ The following table describes the configurations of servers for the 2,000 user b
 | 5  | Load Balancer                                                    | Virtual Machine  | Cent OS 7.0      | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
 | 6  | Load Balancer                                                    | Virtual Machine  | Cent OS 7.0      | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
 | 7  | Database                                                         | Physical Server  | Oracle Linux 7   | Intel E5 2680 v3@ 2.50 GHz x 48 Cores | 64 GB  |
-| 8  | Loadrunner                                                       | Virtual Machine  | Windows 2008 R2  | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
 
 
 
@@ -85,7 +85,7 @@ Test data includes:
 
 
 #### Performance testing results 
-Summary test result:
+**Summary test result:**
 
 |    Version                                                  | AM Breowser 1.1 |
 |-------------------------------------------------------------|-----------------|
@@ -94,9 +94,14 @@ Summary test result:
 |    Average Hits per Second:                                 |    117.509      |
 |    No. of View Transaction processed                        |    12,000       |
 
+**Key Response Time:**
+
+All the average response time are under 2 seconds.
+
+![KeyResponseTime](../img/sizing/2ku_ResponseTime_Graph.png)
 
 
-Detailed test results: 
+**Detailed test results: **
 
 | Transaction Name                                  | Average | 90 Percent | Pass   | Fail |
 |---------------------------------------------------|---------|------------|--------|------|

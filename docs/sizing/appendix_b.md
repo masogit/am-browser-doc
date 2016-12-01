@@ -37,8 +37,6 @@ The following table describes the configurations of servers for the 2,000 user b
 | 5  | Load Balancer                                                    | Virtual Machine  | Cent OS 7.0      | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
 | 6  | Load Balancer                                                    | Virtual Machine  | Cent OS 7.0      | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
 | 7  | Database                                                         | Physical Server  | Oracle Linux 7   | Intel E5 2680 v3@ 2.50 GHz x 48 Cores | 64 GB  |
-| 8  | Loadrunner                                                       | Virtual Machine  | Windows 2008 R2  | Intel E5 2680 v3@ 2.50 GHz x 2 Cores  | 4 GB   |
-
 
 
 #### Software
