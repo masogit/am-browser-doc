@@ -9,6 +9,14 @@ After you install AM Browser service and AM REST service, you need to create you
 
 Then, configure the following sections of the `am-browser-config.properties` file.
 
+### LDAP Authentication
+
+Please reference the AM documentation to configure the LDAP settings in AM:
+http://docs.software.hpe.com/AM/9.60/Content/Administration/ch12s07se03.html
+
+> Note: In order to set the certificate file for LDAP over SSL/TLS integration with AM REST server, the configuration file(aamapi96.ini) should be located in following directory:
+> C:\Windows\System32\config\systemprofile\AppData\Roaming\HPE\AssetManager\conf\aamapi96.ini
+
 ### AM Browser service
 
 The [node] section contains the settings of the AM Browser service, it should resemble the following.
