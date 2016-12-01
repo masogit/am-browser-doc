@@ -12,6 +12,18 @@ Concurrent User Count | Estimated Memory Usage
 
 <br/>
 
+### Central database for Asset Manager Browser
+
+Start from Asset Manager Browser 1.1, there is a central database (MongoDB) introduced to Asset Manager Browser to store all the configurations like views, AQLs and Graphs.
+
+It's recommended to use central database when Asset Manager Browser is in vertical or horizontal scaling mode.
+The database is lightweighted and low-cost on resources, so you may deploy it on the same server of Asset Manager Browser.
+For horizontal scaling to more than four Asset Manager Browser nodes or extreme performance requirement, you may deploy this database server on a dedicated server.
+
+![Horizontal scaling with central database](../img/sizing/AMB_1.1_Horizontal_With_DB.png)
+
+<br/>
+
 ### Asset Manager Rest Server
 
 
