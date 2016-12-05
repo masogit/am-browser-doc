@@ -1,7 +1,7 @@
 # Rules of thumb
 (All the web related application servers in this section, if not mentioned, are of 64-bit.)
 ### Asset Manager Browser
-Asset Manager Browser is built on a embeded NodeJS server, which provides much higher effiency than any other coponents in Asset Manager.
+Asset Manager Browser is built on a embeded NodeJS server, which is more efficient than the conventional Asset Manager components.
 
 A standard Asset Manager Browser with 250 ~ 500 concurrent users requires approximately 2GB of RAM.
 For CPU utilization, Asset Manager Browser concumes about 40% of Rest Server for the same number of concurrent users. For example: 250 concurrent users.) Therefore, CPU utilization need to be considered if you want to implement Asset Manager Browser on a separate server. 

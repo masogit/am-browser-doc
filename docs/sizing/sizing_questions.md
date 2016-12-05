@@ -31,9 +31,9 @@ The following list of questions is designed to gather the information that is re
 	2.	IT specialists (Technicians, Administrators). If yes, what is the overall number of IT specialists? (Technicians, Administrators)
 	3.	Named/Floating Users. If yes, how many of them should have guaranteed access to Asset Manager?
 	4.	What are your module-level user requirements for Asset Manager?
-7.	How many users will have access to Asset Manager Web Tier?
+7.	How many users will have access to Asset Manager Web Tier/ Asset Manager Browser?
 8.	What is the geographical breakdown of your web user base in workday bandwidth (7x24)?
-9.	What is the concurrent users of Asset Manager Web Tier / windows client?
+9.	What is the concurrent users of Asset Manager Web Tier / windows client / Asset Manager Browser?
 10.	What is the concurrent user number of Asset Manager based on each module?
 11.	What are your expected data volumes (including attachments) for the following modules?
 	1.	Cable and Circuit
