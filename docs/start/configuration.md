@@ -56,7 +56,7 @@ AM Browser has 3 user roles configured in the `am-browser-config.properties` fil
 ```
 [user]
 admin = @admin
-power = <AM user profile>, <AM user profile>
+power = <AM user role1>, <AM user role2>
 guest = @anyone
 ```
 
@@ -64,7 +64,7 @@ guest = @anyone
 
 `@anyone` stands for all AM users including the guest users.
 
-You can assign one or several AM user profiles to `power` or `guest`, for example, SAM_Manager, Finance_manager.
+You can assign one or several AM user roles to `power` or `guest`, for example, SAM_Manager, Finance_manager.
 
 ### Slack
 
