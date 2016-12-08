@@ -4,14 +4,14 @@
 The goal of the benchmark test is to determine the system performance with 2,000 concurrent users.
 
 #### Deployment diagram
-For 2,000 concurrent users, our test environment contains 8 Asset Manager Rest Service servers and 4 Asset Manager Browser servers on four machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
-(Central database for Asset Manager Browser is deployed with Oracle database.)
+For 2,000 concurrent users, the test environment contains 8 Asset Manager REST Service servers and 4 Asset Manager Browser servers on 4 machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
+Central database for Asset Manager Browser is deployed with Oracle database.
 
 ![AMB_Benchmark](../img/sizing/AMB_1.1_2000_BM.png)
 
 #### Hardware
 Performance tests are executed on virtual machines except the database.
-The following table describes the configurations of servers for the 2,000 user benchmark test.
+The following table shows the configurations of servers for the 2,000 user benchmark test.
 
 | ID | Usage                                                            | Type             | Operation system | CPU                                   | Memory |
 |----|------------------------------------------------------------------|------------------|------------------|---------------------------------------|--------|
@@ -29,7 +29,7 @@ The following table describes the configurations of servers for the 2,000 user b
 All tests were run on the following software set:
 
 * HPE Load Runner 11.52.0.0
-* Apache Tomcat Apache Tomcat 8.0.36 64 bit
+* Apache Tomcat 8.0.36 64 bit
 * Tengine/2.1.2 (nginx/1.6.2)
 * JDK 1.8.0_54 64-bit
 * Asset Manager 9.61 Release Build
@@ -39,7 +39,7 @@ All tests were run on the following software set:
 #### Setup and Tuning
 Tuning made before test:
 
-Please find in "[appendix](appendix_c.md)" for more details.
+See "[appendix](appendix_c.md)" for more details.
 
 
 #### Test Data
@@ -65,7 +65,7 @@ Test data includes:
 
 
 #### Load Test Scenario Setting
-- Test will be executed for more than 80 minutes.
+- Test was executed for more than 80 minutes.
 - Detailed scenario setting:
 
     |    User Scenario    |    User Count    |    Peak   Duration    |    Start Time    |    Think   Time        |    Ramp-up Rate                                            |

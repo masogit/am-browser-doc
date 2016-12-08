@@ -1,9 +1,9 @@
 # Appendix D: Database volume size of sample deployment 
 #### Database volume size
-The following table presents the disk usage of data sets on Oracle database.
+The following table shows the disk usage of data sets on Oracle database.
 
-- All the databases are using default character set. Converting to UTF may add more disk usage. 
-- Disk usage may be various as per the usage on various set of customer data.
+- All the databases use the default character set. Converting to UTF may add more disk usage. 
+- Disk usage may vary as per the usage on various set of customer data.
 - Disk usage for supporting usage, such as temporary space and database system level disk usage, are not included.
 
     | Database Type                                     | Data Set                                                         | Disk Usage       |

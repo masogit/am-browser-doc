@@ -1,6 +1,6 @@
 # Appendix B - Asset Manager Browser processing capability test results
 #### Introduction
-As an online transaction processing systems, the peak processing capability are always concerned by most customers. The results below presents the view capability of Asset Manager Browser with populated test data set. 
+As an online transaction processing system, the peak processing capability are always concerned by most customers. The results below show the view capability of Asset Manager Browser with populated test data set. 
 #### Result Summary
 
 
@@ -15,7 +15,7 @@ As an online transaction processing systems, the peak processing capability are 
 
 *B: Browser Server
 
-R: Rest Server
+R: REST Server
 
 
 #### Deployment diagram
@@ -24,7 +24,7 @@ R: Rest Server
 
 #### Hardware
 Performance tests are executed on virtual machines except the database.
-The following table describes the configurations of servers for the 2,000 user benchmark test.
+The following table shows the configurations of servers for the 2,000 user benchmark test.
 
 
 
@@ -43,7 +43,7 @@ The following table describes the configurations of servers for the 2,000 user b
 All tests were run on the following software set:
 
 * HPE Load Runner 11.52.0.0
-* Apache Tomcat Apache Tomcat 8.0.36 64 bit
+* Apache Tomcat 8.0.36 64 bit
 * Tengine/2.1.2 (nginx/1.6.2)
 * JDK 1.8.0_54 64-bit
 * Asset Manager 9.61 Release Build
@@ -54,7 +54,7 @@ All tests were run on the following software set:
 #### Setup and Tuning
 Tuning made before test:
 
-Please find in "[appendix](appendix_c.md)" for more details.
+See "[appendix](appendix_c.md)" for more details.
 
 
 #### Test Data
@@ -80,7 +80,7 @@ Test data includes:
 
 
 #### Load Test Scenario Setting
-* Test will be executed for more than 10 minutes for each user count.
+* Test was executed for more than 10 minutes for each user count.
 * Detailed scenario setting:
 
 |    User Scenario    |    User Count                          |    Peak   Duration    |    Start Time    |    Think   Time        |    Ramp-up Rate                                            |
@@ -104,4 +104,4 @@ The processing capability of Asset Manager Browser Server is about 200 hit per s
 The servers will get best performance if the load are below the maximum processing capability.
 Tests proved that the capability can be increased as you add more additional server instances. 
 
-For higher capability or scaling related performance issues such as locking or dead locking, please refer to the tuning section in Help Server.
+For higher capability or scaling related performance issues such as locking or dead locking, refer to the Tune section in Help Server.
