@@ -82,6 +82,6 @@ If you want to count the cost of your company a year,you can create a Histogram 
 
 >6.Click Save Tab will get a confirm view.You cotinue clik Confirm Button.It will save the Graph.
 
-If you want to see the Graph detials,you should clik Expand Tab.It
+If you want to see the Graph detials,you should clik Expand Tab.
 
 If you want to see the Graph item detials,you should click the item.
