@@ -28,12 +28,12 @@ There are two display styles:
 Based on your business requirement, you can create different category as tabs.
 
 To create a new category, enable the Edit mode and then click Add Tab.
-(You should cilck ![Viewer screen shot](img/+.png) to create.)
+
 
 In the Edit mode, you can also rename a category by double-clicking it.
 
 In the Edit mode, you can also delete a category by clicking Delete Tab.
-(You should cilck ![Viewer screen shot](img/-.png) to delete.)
+
 
 
 ### Flexible layout
@@ -63,10 +63,10 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 Click each Graph title, get a single view to display this Graph with details.(You should click ![Viewer screen shot](img/single.png) to show more Grath details.)
 
-###Graph Item view
+### Graph Item view
 Click each Graph item,get a Record list view to display this item with details.If continue click each record,will get a view about more details.
 
-###Example:
+### Example:
 
 If you want to count the cost of your company a year,you can create a Histogram by click Builder-->Graph.Then if you want to display it like this:
 ![Viewer screen shot](img/edit_view.png)
