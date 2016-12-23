@@ -32,7 +32,7 @@ To create a new category, enable the Edit mode and then click Add Tab.
 
 In the Edit mode, you can also rename a category by double-clicking it.
 
-In the Edit mode, you can also delete a category by clicking Delete Tab.
+In the Edit mode, you can also delete a category by clicking Close Tab.
 
 
 
@@ -61,7 +61,7 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 ### Single Graph view
 
-Click each Graph title, get a single view to display this Graph with details.(You should click ![Viewer screen shot](img/single.PNG) to show more Grath details.)
+Click each Graph title, get a single view to display this Graph with details.(You should click Expand Tab to show more Grath details.)
 
 ### Graph Item view
 Click each Graph item,get a Record list view to display this item with details.If continue click each record,will get a view about more details.
@@ -74,16 +74,14 @@ If you want to count the cost of your company a year,you can create a Histogram 
 
 >2.Find a position you want to create.
 
->3.Click ![Viewer screen shot](img/++.png)to create a flexible layout.
+>3.Click Add tab to create a flexible layout.
 
 >4.Click Attach a Graph and select a Graph which you want to attach.
 
 >5.You can click Row or Column to change the arrangement of the flexible layout.
 
->6.Click ![Viewer screen shot](img/save.png) will get a confirm view.You cotinue clik Confirm Button.It will save the Graph.
+>6.Click Save Tab will get a confirm view.You cotinue clik Confirm Button.It will save the Graph.
 
-If you want to see the Graph detials,you should clik ![Viewer screen shot](img/single.PNG).It will get a view like this:
-![Viewer screen shot](img/graph-detail.PNG)
+If you want to see the Graph detials,you should clik Expand Tab.It
 
-If you want to see the Graph item detials,you should click the item.it will get a Expense Line view:
-![Viewer screen shot](img/graph-item.PNG)
+If you want to see the Graph item detials,you should click the item.
