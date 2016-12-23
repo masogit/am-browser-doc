@@ -1,6 +1,6 @@
 # AM Browser Viewer
 
-Viewer module is one of the core functionality AM Browser has provided. Through views, user are able to see specific reports formed by specified selected data.
+Viewer module is one of the core functionalities AM Browser has provided. Through views, user are able to see specific reports formed by pre selected fields.
 Before views can be accessed, they have to be defined by admin user first.
 
 Three types of user using views:
@@ -17,18 +17,20 @@ The workspace of view contains three major areas in center area of the page:
 - Header Menu
 - Content
 
-See that layout through screenshot [attach a screenshot]
-> All settings on a view will be saved in Web Browser's localStorage.
+> All settings made on a view will be saved in Web Browser's localStorage.  
+> Settings include order by, group by parameters and mode of topology or table for the content etc.
 
 ## Statistics Area
 This area intends to showing statistics data of group by result. It can show the result as two mode:
 
- - List table mode  
-        It shows groupby field, its numbers and combine with an number of total under the footer.
-        The statistics area is placed on the left side, by default, it is disabled and hidden, only enabled if the view has selected groupby filter.  
+ - Legend mode  
+    - Located at left side panel of Content
+    - Show a statistics list table with fields chosen to be group by, quantity and a number of total at footer
+    - Contain switch button to distribution mode on the up-right corner
  - Distribution mode
-
-[Put on a attahced screenshot]
+    - Show statistics result in blocks and distribution way
+    - Has a switch button on the up-right corner back to list table mode
+    - Check out more details in the Distribution section
 
 ## Header menu
 A header menu at the bottom of Header navigation contains following components from left to right:
@@ -38,7 +40,7 @@ A header menu at the bottom of Header navigation contains following components f
     - Instant search
         - Type in simply: AM Browser allows you to filter records in the loaded table or topology nodes according to input keywords.
     - Quick search
-        - Type in and press 'Enter' then: Filtering from back-end, AM Browser sends formed search query to AM web service to require match records. It will refresh table or topology nodes with returned results (**View must have defined searchable fields**)
+        - Type in and press 'Enter' then: Filtering from back-end, AM Browser sends formed search query to AM web service to require matching records. It refreshes table or topology nodes with returned results (**View must have defined searchable fields**)
     - Advanced search (Input AQL filters)
         - Available to Admin and Power user only
         - Switch enable and disable mode by pressing toggle button or input '/' as first character
@@ -62,41 +64,42 @@ A header menu at the bottom of Header navigation contains following components f
     - Order by - Display default order by and sequence
     - Query aggregation - Click one fields, query aggregation data from REST service, result will display in Aggregation area. Allow to cancel aggregation result by click field again  
 
-5. Topology/List mode switch button
+5. Topology/List mode switch button  
+    AM Browser either display contents as list table or topology nodes according to the status of this switching button. By default, AM Browser display the result in table mode.
 
 6. Misc Menu
-    - Full column - In Table mode, record display limit to 5 fields as default, enable full column toggle to display all fields
-    - Download CSV - Async generate records by current filter and order to CSV, download it in web browser
+    - Full column - In Table mode, default number of columns are 5, enable full column toggle to display all fields defined for the view.
+    - Download CSV - Download records in current contents as CSV file.
     - Download PDF
-        - All user can see this drop down menu
-        - Display Personal and Public templates
-        - User can create/modify/save/delete/duplicate Personal templates and duplicate Public template
-        - User can not see other user's Personal templates
+        - Available to all types of user
+        - Allow you to apply defined PDF report template of Personal (defined and owned by yourself) and Public
+        - In the pop up PDF template layer, AM Browser opens all functionalities of PDF template module to you. e.g. create a new templates, modify existing one, duplicate from a public template
         - Generate PDF for record list with aggregation data, without any sub links contents
-        - Basic operations please refer to PDF Template
     - Print BarCode
-        - User can design his own BarCode template
-        - All the settings will be cached
-        - User can choose how many records to preview
-        - User can choose which field to generate Bar Code
-        - User should choose at least 1 field to display Bar Code or there will be an error message, and Preview and Export will be disabled
-        - Basic operations please refer to PDF Template
+        - Before printing, AM Browser allows you to apply a template within a template management layer
+        - Open all functionalities of PDF template in template management layer
+        - Sync all changes with PDF template management module
+        - Number of preview records is changeable as need. Number of it needs to large than 1.
+        - Fields to be used for Bar code generating are definable
+        > Note: The BarCode printing function only available in Chrome.
 
 ## Content
-Under header menu, it is the content of report data retreived from AM web service. It has two modes:
+Under header menu, it is the content of report data retrieved from AM web service. It has two modes:
 
-- List (default mode)
+- Table(default mode)
 - Topology
-> Switch mode by clicking on Toplogy/List mode switch button from header menu
+> Switch mode by clicking on Topology/table mode switch button from header menu.  
+> By default, AM Browser displays result in table mode
 
-### List mode of Content    
-- Header: Fields name and order by
-    - Display Header by label name of field by default, but if it has alias, display alias then.
-    - Clicking fields name will display ascent or descend icon, and query records from back end.
+### Table mode     
+- Header:
+    - Render Fields name and along with order by icon if the column is chosen to be order by
+    - Display Header by label name of field by default, but if it has alias, display alias then
+    - To sort, you can click on fields name
 - Column
     - By default, 5 columns are displayed.
     - Click a record to show detail.
-      If you scroll down to the bottom, it automatically gets the data of the next page.  
+    - To load more records in, you can either scroll down to bottom of page or click record number and response time button from header menu
 
       ![Viewer screen shot](img/viewer1.png)
 
@@ -109,17 +112,16 @@ Under header menu, it is the content of report data retreived from AM web servic
 
  ![Viewer screen shot](img/detail1.png)
 
-### Topology mode of Content    
-- Display each record as icon and its self description
-- Lazy load each sub link's records by user expand manually
-- Display record all fields in right side panel when clicking each record
-- Download PDF - Same with View record detail (one record and its sub links)
+### Topology mode
+- Display a map of links
+- Display each record as a node which renders an icon according to the type of equipment and text from self description of the record
 
   ![Viewer screenshot in topology mode](img/viewer2.png)
 
 - Detail  
-  Clicking on a record, content switch to a tree map rendering links of record have. Clicking on each link, it either expands the link (if the link still has child links) or display its fields in the right side panel.  
-  Download PDF, functioning same as list mode, allow you to export this record as pdf file.
+    - To find out the detail of a node, click on the node switching to detail page. That page displays a tree map rendering links of record have
+    - Click on a link, AM Browser either expands the link (if the link has child links) or display all fields on the right side panel
+    - Download PDF on the right side panel, functioning same as in table mode, allows you to export the record into a pdf file
   ![Detail record in topology mode](img/detail2.png)
 
 ## Distribution
