@@ -7,12 +7,12 @@ repo_name: Download
 
 pages:
 - Overview: index.md
-- Getting Started: 
+- Getting Started:
     - Installation: start/installation.md
     - Configuration: start/configuration.md
     - Troubleshooting: start/troubleshooting.md
     - FAQ: start/faq.md
-    - Sizing Guide: 
+    - Sizing Guide:
         - Introduction: sizing/introduction.md
         - Sizing Questions: sizing/sizing_questions.md
         - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
@@ -26,7 +26,9 @@ pages:
     - Search: features/search.md
     - Insight: features/insight.md
     - Viewer: features/viewer.md
-    - Builder: features/builder.md
+    - Builder:
+      - View: features/builder/builder.md
+      - Template: features/builder/template.md
     - Graph: features/graph.md
     - Adapter: features/adpater.md
 - Community:
