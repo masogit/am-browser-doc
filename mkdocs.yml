@@ -27,7 +27,7 @@ pages:
     - Insight: features/insight.md
     - Viewer: features/viewer.md
     - Builder:
-      - View: features/builder/builder.md
+      - View: features/builder/view.md
       - Template: features/builder/template.md
     - Graph: features/graph.md
     - Adapter: features/adpater.md
