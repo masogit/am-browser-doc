@@ -29,7 +29,7 @@ pages:
     - Builder:
       - View: features/builder/view.md
       - Template: features/builder/template.md
-    - Graph: features/graph.md
+      - Graph: features/builder/graph.md
     - Adapter: features/adpater.md
 - Community:
     - Slack: slack.md
