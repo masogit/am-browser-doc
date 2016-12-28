@@ -9,7 +9,7 @@ Currently, there are 3 types of Graph with designer. These graphs are built with
 - Meter: Bar, Arc, Circle, Spiral
 - Distribution
 
-> Only aggregation AQL query data can be configured in Graph designer.
+> Recommend use aggregation AQL to query data to configure Graph.
 
 ### AQL data and configuration
 
@@ -25,30 +25,27 @@ After you input aggregation AQL, you can use Preview to get a query result. It s
 
 > It is suggested to have the first column as the group by field and the second column as `count(*)` or `sum(<field name>)`.
 
-> Some AQL functions can not work currently.
+**Below functions are not supported in AQL functions**
 
 <table>
     <tr>
-         <th colspan='5' width=20%>for example:</th>
+         <th colspan='6' align='left'>Reference</th>
     </tr>
     <tr>
-        <td>IsNull</td>
+        <td>NullTime()</td>
         <td>NullBlob()</td>
         <td>NullMemo()</td>
         <td>NullString()</td>
         <td>NullDate()</td>
-    </tr>
-    <tr>
-        <td>NullTime()</td>
-        <td>Trunc()</td>
         <td>NullTimeStamp()</td>
-        <td>NumberToTime()</td>
-        <td>TextToTime()</td>
     </tr>
     <tr>
+        <td>Trunc()</td>
+        <td>TextToTime()</td>
         <td>DataLength()</td>
         <td>Ceil()</td>
         <td>Floor()</td>
+        <td>NumberToTime()</td>
     </tr>
 </table>
 
@@ -58,7 +55,7 @@ After getting a query result table with some columns,  you can create a graph fr
 
 ##### Basic properties
 - **Column** (mandatory)
-> When you input  aggregation AQL, it should display some columns.**Column** will create some selectable buttons by pure numeric columns. You can select a button, it will display a graph. If you have more than one selectable button. You can do multiple choice in Chart, it will display a composite graph. But you only  do single choice in Meter and Distribution.
+> Ater query AQL, it should display some options in column. **Column** options will only dipslay numeric fields. In Chart, options are displayed as checkbox for multipule selection, In Meter or Distribution, options are displayed as radio box for single selection.
 
 - Label
     - X Axis label in Chart
@@ -96,19 +93,20 @@ Attach a graph with a View, then you can click an element. A page will pop up an
 - Field and Value is null. When you click an element, it will query the complete set of data in the View.
 - Field and Value is not null. It means you put the **Value** values as a condition to the Field, will query with this condition in the VIEW .And return a subset of View.
 
-
 ### Example
-If you want to create a Graph like this :
->![Graph](../img/graph4.PNG)
-> 1.You click New Tab to create a new Graph.
 
-> 2.You should input the Name and aggregation AQL in the right textarea, then it will display a records list.
+If you want to create a Graph like this:
 
->3.You should input Category to define the main menu item in the left bar.
+> ![Graph](../img/graph4.PNG)
 
->4.Now,you click a  selectable button in Column, it will display a graph(if not have selectable button, please check out your aggregation AQL). You can choose some properties to change the details about graph.
+> 1. Click New Tab to create a new Graph.
 
->5.You can Query, Save, Delete, Mail and Download your graph by click these buttons.
+> 2. Input the Name and aggregation AQL in the right textarea, then it will display a records list.
 
-If you want to click the element of Graph to get a records list view. You should click Attached View, select a existing View and configure Field
-and Value.
+> 3. Input Category to define the main menu item in the left bar.
+
+> 4. Select options in Column, a Graph will display (if there is no options, please check up AQL). Then configure parameters for Graph display
+
+> 5. Try these functions: Query, Save, Delete, Mail and Download.
+
+If you want to click the element of Graph to get a records list view. You should click Attached View, select a existing View and configure Field and Value.
