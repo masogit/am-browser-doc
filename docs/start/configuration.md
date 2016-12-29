@@ -66,6 +66,8 @@ guest = @anyone
 
 You can assign one or several AM user roles to `power` or `guest`, for example, SAM_Manager, Finance_manager.
 
+> Specify AM Role **SQL Name**
+
 ### Slack
 
 AM Browser allows you to send message to the channel of `Slack.com`. 
