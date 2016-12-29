@@ -56,3 +56,6 @@ Log file folders
 ### DSN (Data Source Name)
 As for DSN setup, refer to AM [installation](installation) guide.
 
+### Login User Name
+AM Browser login user name is case sensitive. Different user name will see different Insight dashboard and PDF templates
+
