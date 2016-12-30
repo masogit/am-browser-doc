@@ -8,17 +8,13 @@ HPE Asset Manager Browser (AM Browser) is a lightweight UI that leverages RESTfu
 
 AM Browser provides you with the following features:
 
-- Providing quick access to specific asset information
-- Create views in mins and expose the view to AM data consumers
-- Write AQL (AM query language) and get results you need in graphical format 
+- Providing quick access to specific assets information
+- Create views in mins and expose the view as both list and topology modes
+- Export PDF reports with customized formats and styles (support barcode)
+- Allow query data by AQL (AM query language) and flexible customize graphical formats
+- Manage divers personal dashboard composited by graphical
+- A simple SAM (Software Asset Management) reports module  
 - Monitor AM-UCMDB integration status
-- Message to specified channel of [Slack](https://slack.com/) group
-
-![Features](img/features1.png)
-
-Below are four features and relations:
-
-![Core](img/core1.png)
 
 ### Use cases
 
