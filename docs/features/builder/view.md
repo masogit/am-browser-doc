@@ -69,7 +69,3 @@ The following functions take effect in each link (Root or 1-M link).
 - Share a view with guest users by sending a URL in email.
 
 > Define **My** view with `CurrentUser` in AQL filter, e.g.: `Portfolio.User=CurrentUser`, then share to guest users. They can query their own AM data.
-
-Video:
-
-[![Builder video](http://img.youtube.com/vi/pDi3wsiG8kE/0.jpg)](http://www.youtube.com/watch?v=pDi3wsiG8kE "Create an AMB View")

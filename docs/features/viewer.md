@@ -137,7 +137,3 @@ AM Browser Viewer provides a colorful and bright distribution graph to display g
 - Filter
     - Display AQL filters that added by user
     - Allow to multiple filters, condition is 'AND'
-
-Video:
-
-[![Filter video](http://img.youtube.com/vi/2_Cn7692HHk/0.jpg)](http://www.youtube.com/watch?v=2_Cn7692HHk "Group and Filter")

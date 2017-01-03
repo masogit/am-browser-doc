@@ -11,7 +11,6 @@ pages:
     - Installation: start/installation.md
     - Configuration: start/configuration.md
     - Troubleshooting: start/troubleshooting.md
-    - FAQ: start/faq.md
     - Sizing Guide:
         - Introduction: sizing/introduction.md
         - Sizing Questions: sizing/sizing_questions.md
@@ -22,6 +21,7 @@ pages:
         - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
         - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
         - Appendix E - Links : sizing/appendix_e.md
+    - FAQ: start/faq.md
 - Features:
     - Search: features/search.md
     - Insight: features/insight.md
