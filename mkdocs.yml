@@ -1,5 +1,5 @@
-site_name: AM Browser
-site_favicon: favicon.ico
+site_name: Asset Manager Browser
+site_favicon: logo.svg
 site_author: shuo.man@hpe.com
 site_description: HPE Asset Manager online document
 repo_url: https://hpln.hpe.com/contentoffering/am-browser
@@ -35,8 +35,18 @@ pages:
     - Slack: slack.md
     - Blogs: blogs.md
 
-theme_dir: 'flatly'
+theme_dir: 'material'
+# theme_dir: 'flatly'
 # theme: readthedocs
 # theme: Bootstrap
 
-extra_css: [hpe.css]
+# extra_css: ['hpe.css']
+extra:
+  version: '1.1'
+  logo: 'logo.svg'
+#   author: 
+#     github: 'masogit'
+#     twitter: 'manshuo'
+#  palette:
+#    primary: 'green'
+#    accent: 'light green'
