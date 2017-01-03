@@ -22,8 +22,6 @@ AM Browser provides you with the following use cases:
 
 **@todo: provide more use cases by text, replace below pictures.**
 
-![Use cases](img/usecases1.png)
-
 ### Roles
 
 AM Browser has 3 roles:
