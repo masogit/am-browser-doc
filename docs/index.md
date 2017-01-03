@@ -20,10 +20,28 @@ AM Browser provides you with the following features:
 
 AM Browser provides you with the following use cases:
 
+**@todo: provide more use cases by text, replace below pictures.**
+
 ![Use cases](img/usecases1.png)
 
 ### Roles
 
 AM Browser has 3 roles:
 
-![Roles](img/roles.png)
+- Administrator
+    - Manage Views, Graphs and PDF Templates
+    - Customize My Assets module
+    - Share view or graph links by mail
+    - Publish Insight tabs to Power users
+    - Manage server configuration (backend)
+    - Customize icons for each record in Viewer topology mode (backend)
+- Power user
+    - Global search
+    - Query View, Graphs and export data by CSV or PDF
+    - Manage personal dashboard (Insight) and view published tabs by Administrator
+    - Monitor AM-UCMDB adapters
+- Normal user
+    - Explorer a shared View
+    - Explorer a shard Graph
+    - Export CSV and PDF
+    - Explorer My Assets
