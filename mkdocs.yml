@@ -46,7 +46,6 @@ extra:
   logo: 'logo.svg'
   palette:
     primary: 'Teal'
-    accent: 'light blue'
 #   author: 
 #     github: 'masogit'
 #     twitter: 'manshuo'
