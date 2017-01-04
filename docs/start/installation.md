@@ -91,3 +91,7 @@ HPE updates the installation files once a new version is available. The steps to
 1. Copy files. Unzip the new package to the correspondent folders to overwrite the old files.
 
 > If you try to deploy REST server war again, make sure that you unregister the previous service and register new service again.
+
+### Migrate file DB to MongoDB
+
+AM Browser 1.1 supports MongoDB to store the configuration data. 

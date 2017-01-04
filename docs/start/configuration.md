@@ -68,6 +68,27 @@ You can assign one or several AM user roles to `power` or `guest`, for example, 
 
 > Specify AM Role **SQL Name**
 
+### Database configuration
+
+AM Browser support to save configuration data to **file** DB or **MongoDB**, type:
+- file
+- mongo
+
+```
+# db type: file, mongo
+[db]
+type = file
+folder = ./db
+
+[mongo]
+server = localhost
+port = 27017
+db = amb
+username =
+password =
+```
+
+
 ### Slack
 
 AM Browser allows you to send message to the channel of `Slack.com`. 

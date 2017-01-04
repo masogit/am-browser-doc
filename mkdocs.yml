@@ -44,9 +44,9 @@ theme_dir: 'material'
 extra:
   version: '1.1'
   logo: 'logo.svg'
+#   palette:
+#     primary: 'indigo'
+#     accent: 'light blue'
 #   author: 
 #     github: 'masogit'
 #     twitter: 'manshuo'
-#  palette:
-#    primary: 'green'
-#    accent: 'light green'

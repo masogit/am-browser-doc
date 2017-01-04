@@ -1,8 +1,8 @@
 # Asset Manager Browser
 
-HPE Asset Manager Browser (AM Browser) is a lightweight UI that leverages RESTful API layer to pull data from HPE Asset Manager and simplifies the end user data consumption of ITAM data.
+AM Browser helps the world’s largest organizations to unleash the power of their most valuable ITAM data. People across your organization start to see things in the business they couldn't see before. They get answers to questions they previously wouldn't have thought to ask. Value of self-service is redefined by the new AM browser product. 
 
-![Viewer screen shot](features/img/insight1.png)
+![Home](img/home.png)
 
 ### Features
 
@@ -16,11 +16,16 @@ AM Browser provides you with the following features:
 - A simple SAM (Software Asset Management) reports module  
 - Monitor AM-UCMDB integration status
 
+![Features](img/amb_features.png)
+
 ### Use cases
 
 AM Browser provides you with the following use cases:
 
-**@todo: provide more use cases by text, replace below pictures.**
+- Audit : Get Effective license positioning for major SAM vendors with SAM Dashboard
+- On demand self-service reporting : Self-service reporting for any users in an organization. For ex, a datacentre manager trying to search for a location of an asset via asset tag; Asset receiving team validating the asset ownership of an end user asset via AMB. 
+- Topology visualization : Change control manager wanted to check list of VMs connected to a ESX server.
+
 
 ### Roles
 
@@ -43,6 +48,7 @@ AM Browser has 3 roles:
     - Explorer a shard Graph
     - Export CSV and PDF
     - Explorer My Assets
+
 
 ### Change logs
 
