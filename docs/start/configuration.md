@@ -39,7 +39,7 @@ The [rest] section contains the settings of the AM REST service for AM Browser, 
 ```
 [rest]
 protocol = http
-server = localhost 
+server = localhost
 port = 10081
 base = /AssetManagerWebService/rs
 version = /v1
@@ -91,9 +91,9 @@ password =
 
 ### Slack
 
-AM Browser allows you to send message to the channel of `Slack.com`. 
+AM Browser allows you to send message to the channel of `Slack.com`.
 
-Configure the URL and channel name in the [slack] section so that the Slack function works. 
+Configure the URL and channel name in the [slack] section so that the Slack function works.
 ```
 [slack]
 #url = https://hooks.slack.com/services/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
@@ -146,3 +146,37 @@ AMB_NODE_DEBUG | node.is_debug | `true` or `false`
 AMB_NODE_CSRF | node.enable_csrf | `true` or `false`
 
 > Setting `NODE_ENV=production` will significantly improve the performance of the AM Browser Service.
+
+### Icon Map
+Icons in topology mode of view can be configured by Admin user. AM Browser allows mapping a specified icon to tables or records.
+To customize icons, you can edit iconMap.json file under <AM Browser installation folder>/app folder.
+See the json format file structured as below:
+
+  - defaultIcon: define default icon
+  - 'Key-value' pairs:
+
+      - The 'keys' are SQL name of tables existed in AM.
+      - 'value' part is bit complicated, but we will walk you through.  
+      It can be a string or an array. By string, you are defining a icon applies to the table. i.e.  
+
+```
+          "amSoftInstall": "App".
+```
+With an array as value, AM Browser enables you specifying icons to record level, for instance:
+
+```
+          "amExpenseLine": [
+            {
+              "field": "Title",
+              "like": "SIM",
+              "icon": "CreditCard"
+            }
+          ],
+```
+In above example:
+
+- "field": field name from AM
+- "like": operator, matching condition. It supports input user type name directly, i.e. Yes for bAdminRight. Also, we have another operator "eq". To note, both of them can be string or array.
+- "icon": defines icon name. Those names are referenced from [Grommet Icon (version 1.1.0).](https://grommet.github.io/docs/icon)
+
+> Refresh web page will do changes effective. No need to restart AM Browser server.
