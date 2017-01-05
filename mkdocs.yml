@@ -25,7 +25,16 @@ pages:
     - SAM: features/sam.md
     - My Assets: features/myassets.md
     - Adapter: features/adpater.md
-- Sizing Guide: sizing/introduction.md
+- Sizing Guide:
+    - Introduction: sizing/introduction.md
+    - Sizing Questions: sizing/sizing_questions.md
+    - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
+    - Rules of thumb: sizing/rule_of_thumb.md
+    - Appendix A - Asset Manager Browser benchmark performance test results: sizing/appendix_a.md
+    - Appendix B - Asset Manager Browser processing capability test results : sizing/appendix_b.md
+    - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
+    - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
+    - Appendix E - Links : sizing/appendix_e.md
 - Community:
     - Slack: slack.md
     - Blogs: blogs.md
