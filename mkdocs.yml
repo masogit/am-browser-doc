@@ -9,8 +9,10 @@ pages:
 - Overview: index.md
 - Getting Started:
     - Installation: start/installation.md
+    - Upgrade and Migration: start/upgrade.md
     - Configuration: start/configuration.md
     - Troubleshooting: start/troubleshooting.md
+    - Security: start/security.md
     - FAQ: start/faq.md
 - Features:
     - Search: features/search.md
@@ -20,6 +22,8 @@ pages:
       - View: features/builder/view.md
       - Template: features/builder/template.md
       - Graph: features/builder/graph.md
+    - SAM: features/sam.md
+    - My Assets: features/myassets.md
     - Adapter: features/adpater.md
 - Sizing Guide:
     - Introduction: sizing/introduction.md

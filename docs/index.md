@@ -8,7 +8,7 @@ AM Browser helps the world’s largest organizations to unleash the power of the
 
 AM Browser provides you with the following features:
 
-- Providing quick access to specific assets information
+- Providing quick access to my IT assets information
 - Create views in mins and expose the view as both list and topology modes
 - Export PDF reports with customized formats and styles (support barcode)
 - Allow query data by AQL (AM query language) and flexible customize graphical formats
@@ -29,25 +29,30 @@ AM Browser provides you with the following use cases:
 
 ### Roles
 
-AM Browser has 3 roles:
+AM Browser has 3 roles: Administrator, Power user and Normal user
 
-- Administrator
-    - Manage Views, Graphs and PDF Templates
-    - Customize My Assets module
-    - Share view or graph links by mail
-    - Publish Insight tabs to Power users
-    - Manage server configuration (backend)
-    - Customize icons for each record in Viewer topology mode (backend)
-- Power user
-    - Global search
-    - Query View, Graphs and export data by CSV or PDF
-    - Manage personal dashboard (Insight) and view published tabs by Administrator
-    - Monitor AM-UCMDB adapters
-- Normal user
-    - Explorer a shared View
-    - Explorer a shard Graph
-    - Export CSV and PDF
-    - Explorer My Assets
+#### **Administrator**
+
+- Manage Views, Graphs and PDF Templates
+- Customize My Assets module
+- Share view or graph links by mail
+- Publish Insight tabs to Power users
+- Manage server configuration (backend)
+- Customize icons for each record in Viewer topology mode (backend)
+
+#### **Power user**
+
+- Global search
+- Query View, Graphs and export data by CSV or PDF
+- Manage personal dashboard (Insight) and view published tabs by Administrator
+- Monitor AM-UCMDB adapters
+
+#### **Normal user**
+
+- Explorer a shared View
+- Explorer a shard Graph
+- Export CSV and PDF
+- Explorer My Assets
 
 
 ### Change logs
