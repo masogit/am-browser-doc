@@ -22,11 +22,3 @@ Each result is displayed as a Card/Tile including:
 - Contents with search keyword highlight
 
 ![Card](img/card.png)
-
-### Widget
-
-- Viewer group by category
-- Graph group by category
-- UCMDB Adapter jobs group by status
-
-![Widgets](img/widgets.png)
