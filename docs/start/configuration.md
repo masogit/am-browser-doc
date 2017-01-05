@@ -71,6 +71,7 @@ You can assign one or several AM user roles to `power` or `guest`, for example, 
 ### Database configuration
 
 AM Browser support to save configuration data to **file** DB or **MongoDB**, type:
+
 - file
 - mongo
 
@@ -88,6 +89,7 @@ username =
 password =
 ```
 
+> MongoDB service allow to install in different machine with AM Browser node service. Multiple AM Browser services support configure to one MongoDB, to implement vertical extension.
 
 ### Slack
 
