@@ -179,4 +179,4 @@ In above example:
 - "like": operator, matching condition. It supports input user type name directly, i.e. Yes for bAdminRight. Also, we have another operator "eq". To note, both of them can be string or array.
 - "icon": defines icon name. Those names are referenced from [Grommet Icon (version 1.1.0).](https://grommet.github.io/docs/icon)
 
-> Refresh web page will do changes effective. No need to restart AM Browser server.
+> Restart AM Browser service to make modifications effect
