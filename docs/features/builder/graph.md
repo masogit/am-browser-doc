@@ -95,7 +95,7 @@ Attach a graph with a View, then you can click an element. A page will pop up an
 
 ### Example
 
-If you want to create a Graph like this:
+To create a Graph like below:
 
 > ![Graph](../img/graph4.PNG)
 

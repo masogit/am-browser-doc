@@ -1,7 +1,7 @@
 # AM Browser Template Builder
-A template is a collection of certain styles defined to format reports. AM Browser allow you to build, manage, share and apply template to your printing or downloading report.  
+A template is a collection of certain styles defined to format reports. AM Browser allows you to build, manage, share and apply template to your printing or downloading report.  
 
-Beside the header menu, there are two major panels for template builder as follow from left to right:
+Beside the header menu, there are two major panels in template builder as follow from left to right:
 
 - Style defining panel
 - Preview panel  
@@ -20,7 +20,7 @@ The header menu includes few functionalities as follow from left to right:
       - Duplicate -- Create a duplicate template from existing one
 
 ## Style defining panel
-AM Browser allows you to provide styles to your report's:
+AM Browser enables you to provide styles to your report's different sections:
 
   - Page header
   - Report body
@@ -30,7 +30,7 @@ AM Browser allows you to provide styles to your report's:
 ### Logo upload
 AM Browser provides ability of uploading logo of your organization and attaching it to generated reports.  
 To upload a logo, click on ![Logo png](../img/logo_button.png) button, select logo picture of your organization through file manager of operating system.  
-After uploading process completed, a preview of the logo would appeared at the right-hand side of logo button.
+After uploading process completed, a preview of the logo would appear at the right-hand side of logo button.
 
 ### Style Designer  
 AM Browser extracts few components of report and made built-in styles for them.
