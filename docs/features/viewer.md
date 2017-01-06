@@ -9,7 +9,7 @@ Three types of user using views:
 - Power user - They have only viewing rights to the views defined by admin user
 - Guest user - Guest user access views through url address, which is published by above two types user
 
-# WorkSpace
+## WorkSpace
 
 The workspace of view contains three major areas in center area of the page:
 
@@ -20,7 +20,7 @@ The workspace of view contains three major areas in center area of the page:
 > All settings made on a view will be saved in Web Browser's localStorage.  
 > Settings include order by, group by parameters and mode of topology or table for the content etc.
 
-## Statistics Area
+### Statistics Area
 This area intends to showing statistics data of group by result. It can show the result as two mode:
 
  - Legend mode  
