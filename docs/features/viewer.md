@@ -9,7 +9,7 @@ Three types of user using views:
 - Power user - They have only viewing rights to the views defined by admin user
 - Guest user - Guest user access views through url address, which is published by above two types user
 
-# WorkSpace
+## WorkSpace
 
 The workspace of view contains three major areas in center area of the page:
 
@@ -20,7 +20,7 @@ The workspace of view contains three major areas in center area of the page:
 > All settings made on a view will be saved in Web Browser's localStorage.  
 > Settings include order by, group by parameters and mode of topology or table for the content etc.
 
-## Statistics Area
+### Statistics Area
 This area intends to showing statistics data of group by result. It can show the result as two mode:
 
  - Legend mode  
@@ -32,7 +32,7 @@ This area intends to showing statistics data of group by result. It can show the
     - Has a switch button on the up-right corner back to list table mode
     - Check out more details in the Distribution section
 
-## Header menu
+### Header menu
 A header menu at the bottom of Header navigation contains following components from left to right:
 
 1. Title
@@ -83,7 +83,7 @@ A header menu at the bottom of Header navigation contains following components f
         - Fields to be used for Bar code generating are definable
         > Note: The BarCode printing function only available in Chrome.
 
-## Content
+### Content
 Under header menu, it is the content of report data retrieved from AM web service. It has two modes:
 
 - Table(default mode)
@@ -91,7 +91,7 @@ Under header menu, it is the content of report data retrieved from AM web servic
 > Switch mode by clicking on Topology/table mode switch button from header menu.  
 > By default, AM Browser displays result in table mode
 
-### Table mode     
+#### Table mode     
 - Header:
     - Render Fields name and along with order by icon if the column is chosen to be order by
     - Display Header by label name of field by default, but if it has alias, display alias then
@@ -112,7 +112,7 @@ Under header menu, it is the content of report data retrieved from AM web servic
 
  ![Viewer screen shot](img/detail1.png)
 
-### Topology mode
+#### Topology mode
 - Display a map of links
 - Display each record as a node which renders an icon according to the type of equipment and text from self description of the record
 

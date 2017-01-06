@@ -4,28 +4,28 @@ In AM Browser you will find a simple module to display the status dashboard. As 
 
 >  *Effective License Positioning (Vendor)* > *Product* > *Version* > *Computer*
 
-### Effective License Positioning
+## Effective License Positioning
 
 - List all software vendors out
 - Supports ordering by **Non-Compliance** or **Over-Compliance**
 
 ![SAM screen shot](img/sam1.PNG)
 
-### Product
+## Product
 
 - List all products of a vendor out
 - Supports ordering by **Unused** or **Entitled**
 
 ![SAM screen shot](img/sam2.PNG)
 
-### Version
+## Version
 
 - List all versions of a product out
 - Can be ordered by **License**, **Consumption**, **Compliancy** and **Unused**
 
 ![SAM screen shot](img/sam3.PNG)
 
-### Computer
+## Computer
 
 - List out all computers which has installed the selected product version from Version table
 - Group by hardware type by default.

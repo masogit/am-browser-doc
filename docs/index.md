@@ -1,10 +1,10 @@
 # Asset Manager Browser
 
-AM Browser helps the world’s largest organizations to unleash the power of their most valuable ITAM data. People across your organization start to see things in the business they couldn't see before. They get answers to questions they previously wouldn't have thought to ask. Value of self-service is redefined by the new AM browser product. 
+AM Browser helps the world’s largest organizations to unleash the power of their most valuable ITAM data. People across your organization start to see things in the business they couldn't see before. They get answers to questions they previously wouldn't have thought to ask. Value of self-service is redefined by the new AM browser product.
 
 ![Home](img/home.png)
 
-### Features
+## Features
 
 AM Browser provides you with the following features:
 
@@ -18,20 +18,20 @@ AM Browser provides you with the following features:
 
 ![Features](img/amb_features.png)
 
-### Use cases
+## Use cases
 
 AM Browser provides you with the following use cases:
 
 - Audit : Get Effective license positioning for major SAM vendors with SAM Dashboard
-- On demand self-service reporting : Self-service reporting for any users in an organization. For ex, a datacentre manager trying to search for a location of an asset via asset tag; Asset receiving team validating the asset ownership of an end user asset via AMB. 
+- On demand self-service reporting : Self-service reporting for any users in an organization. For ex, a datacentre manager trying to search for a location of an asset via asset tag; Asset receiving team validating the asset ownership of an end user asset via AMB.
 - Topology visualization : Change control manager wanted to check list of VMs connected to a ESX server.
 
 
-### Roles
+## Roles
 
 AM Browser has 3 roles: Administrator, Power user and Normal user
 
-#### **Administrator**
+### **Administrator**
 
 - Manage Views, Graphs and PDF Templates
 - Customize My Assets module
@@ -40,14 +40,14 @@ AM Browser has 3 roles: Administrator, Power user and Normal user
 - Manage server configuration (backend)
 - Customize icons for each record in Viewer topology mode (backend)
 
-#### **Power user**
+### **Power user**
 
 - Global search
 - Query View, Graphs and export data by CSV or PDF
 - Manage personal dashboard (Insight) and view published tabs by Administrator
 - Monitor AM-UCMDB adapters
 
-#### **Normal user**
+### **Normal user**
 
 - Explorer a shared View
 - Explorer a shard Graph
@@ -55,7 +55,7 @@ AM Browser has 3 roles: Administrator, Power user and Normal user
 - Explorer My Assets
 
 
-### Change logs
+## Change logs
 
 - **1.1**
     - UI and style adjustment

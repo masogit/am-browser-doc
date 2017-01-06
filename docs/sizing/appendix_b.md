@@ -1,7 +1,7 @@
 # Appendix B - Asset Manager Browser processing capability test results
-#### Introduction
-As an online transaction processing system, the peak processing capability are always concerned by most customers. The results below show the view capability of Asset Manager Browser with populated test data set. 
-#### Result Summary
+### Introduction
+As an online transaction processing system, the peak processing capability are always concerned by most customers. The results below show the view capability of Asset Manager Browser with populated test data set.
+### Result Summary
 
 
 | User Scenario                                     | No. of Server Instances                                          |Process capability (peak hits per second)|
@@ -22,7 +22,7 @@ R: REST Server
 
 ![AMB_Benchmark](../img/sizing/AMB_1.1_2000_BM.png)
 
-#### Hardware
+### Hardware
 Performance tests are executed on virtual machines except the database.
 The following table shows the configurations of servers for the 2,000 user benchmark test.
 
@@ -39,7 +39,7 @@ The following table shows the configurations of servers for the 2,000 user bench
 | 7  | Database                                                         | Physical Server  | Oracle Linux 7   | Intel E5 2680 v3@ 2.50 GHz x 48 Cores | 64 GB  |
 
 
-#### Software
+### Software
 All tests were run on the following software set:
 
 * HPE Load Runner 11.52.0.0
@@ -51,13 +51,13 @@ All tests were run on the following software set:
 
 
 
-#### Setup and Tuning
+### Setup and Tuning
 Tuning made before test:
 
 See "[appendix](appendix_c.md)" for more details.
 
 
-#### Test Data
+### Test Data
 Test data includes:
 
 | Table Name      | Size   | Record Count |
@@ -79,7 +79,7 @@ Test data includes:
 
 
 
-#### Load Test Scenario Setting
+### Load Test Scenario Setting
 * Test was executed for more than 10 minutes for each user count.
 * Detailed scenario setting:
 
@@ -98,10 +98,10 @@ Processing speed details
 | View Scenario                                     | 2B + 4R                                                          | 400                                  |
 | View Scenario                                     | 4B + 4R                                                          | 458                                  |
 
-#### Conclusions
-The processing capability of Asset Manager Rest Server is about 100 hit per second. 
-The processing capability of Asset Manager Browser Server is about 200 hit per second. 
+### Conclusions
+The processing capability of Asset Manager Rest Server is about 100 hit per second.
+The processing capability of Asset Manager Browser Server is about 200 hit per second.
 The servers will get best performance if the load are below the maximum processing capability.
-Tests proved that the capability can be increased as you add more additional server instances. 
+Tests proved that the capability can be increased as you add more additional server instances.
 
 For higher capability or scaling related performance issues such as locking or dead locking, refer to the Tune section in Help Server.
