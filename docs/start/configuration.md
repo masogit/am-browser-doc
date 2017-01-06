@@ -1,6 +1,6 @@
 # AM Browser configuration
 
-### SSL
+## SSL
 
 After you install AM Browser service and AM REST service, you need to create your server certificate files and overwrite the following certificate files in the ./ssl folder.
 
@@ -9,7 +9,7 @@ After you install AM Browser service and AM REST service, you need to create you
 
 Then, configure the following sections of the `am-browser-config.properties` file.
 
-### LDAP Authentication
+## LDAP Authentication
 
 Please reference the AM documentation to configure the LDAP settings in AM:
 http://docs.software.hpe.com/AM/9.60/Content/Administration/ch12s07se03.html
@@ -17,7 +17,7 @@ http://docs.software.hpe.com/AM/9.60/Content/Administration/ch12s07se03.html
 > Note: In order to set the certificate file for LDAP over SSL/TLS integration with AM REST server, the configuration file(aamapi96.ini) should be located in following directory:
 > C:\Windows\System32\config\systemprofile\AppData\Roaming\HPE\AssetManager\conf\aamapi96.ini
 
-### AM Browser service
+## AM Browser service
 
 The [node] section contains the settings of the AM Browser service, it should resemble the following.
 
@@ -32,7 +32,7 @@ enable_csrf = true
 
 `port` and `https_port` are AM Browser service port. `session_max_age` is AM Browser server session timeout minutes. `enable_csrf` is a toggle for anti-csrf function.
 
-### AM REST service
+## AM REST service
 
 The [rest] section contains the settings of the AM REST service for AM Browser, it should resemble the following.
 
@@ -49,7 +49,7 @@ version = /v1
 
 > You do not need to change `base` and `version`.
 
-### AM Browser Roles
+## AM Browser Roles
 
 AM Browser has 3 user roles configured in the `am-browser-config.properties` file: Admin, Power User and Guest.
 
@@ -68,7 +68,7 @@ You can assign one or several AM user roles to `power` or `guest`, for example, 
 
 > Specify AM Role **SQL Name**
 
-### Database configuration
+## Database configuration
 
 AM Browser support to save configuration data to **file** DB or **MongoDB**, type:
 
@@ -91,7 +91,7 @@ password =
 
 > MongoDB service allow to install in different machine with AM Browser node service. Multiple AM Browser services support configure to one MongoDB, to implement vertical extension.
 
-### Slack
+## Slack
 
 AM Browser allows you to send message to the channel of `Slack.com`.
 
@@ -106,7 +106,7 @@ host =
 port =
 ```
 
-### UCMDB
+## UCMDB
 AM Browser has 2 features related to UCMDB, reference Features/Adapter chapter.
 
 - Monitor Adapter
@@ -125,7 +125,7 @@ Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 
 > If AM REST Service does not configure the UCMDB connection, Adapter module of AM Browser will not work.
 
-### Environment Parameters
+## Environment Parameters
 There are some system environment parameters used by AM Browser. The priority is: `Environment Parameters > am-browser-config.properties > am-browser-config.properties.default`
 
 Configure in different systems:
@@ -149,7 +149,7 @@ AMB_NODE_CSRF | node.enable_csrf | `true` or `false`
 
 > Setting `NODE_ENV=production` will significantly improve the performance of the AM Browser Service.
 
-### Icon Map
+## Icon Map
 Icons in topology mode of view can be configured by Admin user. AM Browser allows mapping a specified icon to tables or records.
 To customize icons, you can edit iconMap.json file under <AM Browser installation folder>/app folder.
 See the json format file structured as below:

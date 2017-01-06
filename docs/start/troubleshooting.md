@@ -1,7 +1,7 @@
 
 # Troubleshooting
 
-### AM Browser server
+## AM Browser server
 In case `http://<node_server_ip>:8888` does not work:
 
 1.	Open a command window and enter `services.msc`, make sure there is an `HPE am-browser-service` service and make sure its status is "Running".
@@ -15,7 +15,7 @@ If you do not see the following messages in the log files, the `HPE am-browser-s
 {"level":"info","message":"[server] App listening HTTP on port 8888","timestamp":"2016-07-08T06:07:03.876Z"}
 ```
 
-### AM REST server
+## AM REST server
 
 If the Node server is started up, but you cannot log on with the correct username and password, there may be an issue on the REST Server. You can:
 
@@ -25,9 +25,9 @@ If the Node server is started up, but you cannot log on with the correct usernam
 
 If you still cannot figure out what is wrong with your configuration, you can pack your Node Log and Rest Log and send them to ambsupport@hpe.com.
 
-### Message
+## Message
 
-AM Browser displays messages and saves details in `Message History` (Header > User menu > Message History). 
+AM Browser displays messages and saves details in `Message History` (Header > User menu > Message History).
 
 Message types are as follows:
 
@@ -47,15 +47,14 @@ Message types are as follows:
 
 > Error, Warning or Success message box will display 5 seconds by default. Click it to close.
 
-### Service Logs
+## Service Logs
 Log file folders
 
 - AM REST Server: <am-browser-rest>\apache-tomcat-8.0.36\logs
 - AM Browser Server: <am-browser>\log
 
-### DSN (Data Source Name)
+## DSN (Data Source Name)
 As for DSN setup, refer to AM [installation](installation) guide.
 
-### Login User Name
+## Login User Name
 AM Browser login user name is case sensitive. Different user name will see different Insight dashboard and PDF templates
-

@@ -1,6 +1,6 @@
 # Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
 
-#### Nginx Load Balancer (In front of Asset Manager Browser)
+### Nginx Load Balancer (In front of Asset Manager Browser)
 
 ```
 # AM Browser
@@ -43,7 +43,7 @@ server {
             access_log   off;
             allow 1.1.1.1;
         }
-      
+
 
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {
@@ -53,12 +53,12 @@ server {
 }
 ```
 
-#### Asset Manager Browser
+### Asset Manager Browser
 
 Out of box configuration
 
 
-#### Asset Manager Rest Server
+### Asset Manager Rest Server
 
 
 Aamapi96.ini
@@ -69,7 +69,7 @@ Aamapi96.ini
 /Advanced/CnxPoolMaxSize=2048
 ```
 
-#### Nginx Load Balancer (In front of Asset Manager Rest Server)
+### Nginx Load Balancer (In front of Asset Manager Rest Server)
 
 ```
 # AM Rest Server
@@ -115,7 +115,7 @@ server {
             access_log   off;
             allow 1.1.1.1;
         }
-      
+
 
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {
@@ -124,5 +124,3 @@ server {
 
 }
 ```
-
-

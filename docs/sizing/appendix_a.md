@@ -1,15 +1,15 @@
 # Appendix A - Asset Manager Browser benchmark sample performance (2,000 users) test results
 
-#### Asset Manager Browser benchmark sample performance (2,000 users) test results
+### Asset Manager Browser benchmark sample performance (2,000 users) test results
 The goal of the benchmark test is to determine the system performance with 2,000 concurrent users.
 
-#### Deployment diagram
+### Deployment diagram
 For 2,000 concurrent users, the test environment contains 8 Asset Manager REST Service servers and 4 Asset Manager Browser servers on 4 machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
 Central database for Asset Manager Browser is deployed with Oracle database.
 
 ![AMB_Benchmark](../img/sizing/AMB_1.1_2000_BM.png)
 
-#### Hardware
+### Hardware
 Performance tests are executed on virtual machines except the database.
 The following table shows the configurations of servers for the 2,000 user benchmark test.
 
@@ -25,7 +25,7 @@ The following table shows the configurations of servers for the 2,000 user bench
 
 
 
-#### Software
+### Software
 All tests were run on the following software set:
 
 * HPE Load Runner 11.52.0.0
@@ -36,13 +36,13 @@ All tests were run on the following software set:
 * Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 64 bit Production
 
 
-#### Setup and Tuning
+### Setup and Tuning
 Tuning made before test:
 
 See "[appendix](appendix_c.md)" for more details.
 
 
-#### Test Data
+### Test Data
 Test data includes:
 
 | Table Name      | Size   | Record Count |
@@ -64,7 +64,7 @@ Test data includes:
 
 
 
-#### Load Test Scenario Setting
+### Load Test Scenario Setting
 - Test was executed for more than 80 minutes.
 - Detailed scenario setting:
 
@@ -73,7 +73,7 @@ Test data includes:
     | AM Browser View     |    2000          |    40 min             |    +0:00:00      |    25 ~ 35s, random    |    24 users every 15 seconds (shared with all scenario)    |
 
 
-#### Test statistics for 2,000 concurrent user tests
+### Test statistics for 2,000 concurrent user tests
 - Maximum running Vusers:  2,000
     ![Running_Users](../img/sizing/2ku_Running_Users.png)
 
@@ -84,7 +84,7 @@ Test data includes:
 
 
 
-#### Performance testing results 
+### Performance testing results
 **Summary test result:**
 
 |    Version                                                  | AM Breowser 1.1 |
@@ -131,7 +131,7 @@ All the average response time are under 2 seconds.
 
 
 #### Conclusion
-Asset Manager Browser performed acceptably during testing and demonstrated good scalability. 
+Asset Manager Browser performed acceptably during testing and demonstrated good scalability.
 
 All of the response time goals, up to the maximum tested concurrent user level of 2,000 users, were met.
-Additionally, there was a significant margin for increased workload. 
+Additionally, there was a significant margin for increased workload.

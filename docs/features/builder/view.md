@@ -4,7 +4,7 @@ AMB View is a lightweight AM data present layout, Admin users may create and man
 
 A view is created from AM schema (raw table), and a view only has a root table. All fields or links are related from root table.  
 
-### Fields and Links
+## Fields and Links
 Fields and links are selected from AMB Build Schema. When a root table is selected, it cannot be changed. Fields and links are split into 3 groups:
 
 - 1-M Links
@@ -14,7 +14,7 @@ Fields and links are selected from AMB Build Schema. When a root table is select
 All fields or 1-1 link's fields will be added in the same link. When querying data from this view, these fields are queried and displayed together. For example:
 
 ```
-Root table: 
+Root table:
         amComputer
 Fields:
         CPUType
@@ -40,7 +40,7 @@ Field:
         Model.Brand.Name
 ```
 
-### Functions
+## Functions
 
 The following functions take effect in each link (Root or 1-M link).
 
@@ -62,7 +62,7 @@ The following functions take effect in each link (Root or 1-M link).
 - Sort fields
     - Adjust display order of fields.
 
-### Others
+## Others
 
 - Click each link title, AM schema side bar will address the table directly.
 - Export view definition as json file.

@@ -5,7 +5,7 @@ AM Browser has two features that are related to HPE UCMDB:
 - Adapter: Monitor AM-UCMDB Adapters status
 - UCMDB Browser: Open the specified UCMDB Browser to federate CI information. This feature requires that the UCMDB CI is pushed with global_id.
 
-### Monitor AM Adapters status
+## Monitor AM Adapters status
 
 AM Admin user often needs to log on to UCMDB to check AM apdaters status. Now you can monitor AM adapters in AM Browser.
 
@@ -33,15 +33,15 @@ And enable `ucmdb.apdater=true` in the `am-browser-config.properties` file.
 adapter = true
 ```
 
-#### Features
+### Features
 
 Below are features implemented in AMB Adapter modules.
 
-##### Dynamic status
+#### Dynamic status
 
 When you stay on the Adapter page, AM Browser will automatically retrieve status.
 
-##### Integration points
+#### Integration points
 
 There are 3 AM adapters displayed here:
 
@@ -49,20 +49,20 @@ There are 3 AM adapters displayed here:
 - AM Push Adapter (Push Adapter)
 - AM Generic Adapter (Both Populate and Push adapter)
 
-##### Populate and push jobs
+#### Populate and push jobs
 
 There are 2 tabs displaying populate or push jobs.
 
-##### Details statistics
+#### Details statistics
 
 Display populate or push job results.
 
-##### Warning and errors
+#### Warning and errors
 
 Warning or error will be displayed with different icons.
 
 
-### UCMDB Browser Federation
+## UCMDB Browser Federation
 
 In the `am-browser-config.properties` file.
 
@@ -76,4 +76,3 @@ browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=e
 > Disable Adapter feature by set adapter = **false**
 
 When `GlobalId` field is added in the AMB view, on the detail page, you will see a link on GlobalId to open `UCMDB Browser`.
-

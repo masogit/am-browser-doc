@@ -1,4 +1,4 @@
-### Upgrade/Re-install
+## Upgrade/Re-install
 
 HPE updates the installation files once a new version is available. The steps to upgrade/re-install:
 
@@ -11,9 +11,9 @@ HPE updates the installation files once a new version is available. The steps to
 
 > If you try to deploy REST server war again, make sure that you unregister the previous service and register new service again.
 
-### Migrate file DB to MongoDB
+## Migrate file DB to MongoDB
 
-AM Browser 1.1 supports both file DB and MongoDB to store the configuration data. Also supports migrate data from file DB to MongoDB. 
+AM Browser 1.1 supports both file DB and MongoDB to store the configuration data. Also supports migrate data from file DB to MongoDB.
 
 Ensure configure correct connection parameter for both file DB folder and MongoDB, reference chapter [Configuration](configuration/#database-configuration). Run below script by administrator or root right:
 
