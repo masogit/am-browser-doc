@@ -24,7 +24,7 @@ List all versions of one product with **License**, **Consumption**, **Compliancy
 
 ### Computer
 
-List all computers installed specified version, group by hardware models.
+List all computers installed specified version, group by IT Equipment type and hardware models.
 
 ![SAM screen shot](img/sam4.PNG)
 

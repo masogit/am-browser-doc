@@ -20,7 +20,7 @@ Display a dashboard for aggregation data from all views in My Assets module.
 
 ### Customization
 
-This module designed for a shortcut views category to query user related data, although there is no limitation to how many views or what's kind of data should present.
+This module designed for a shortcut views category to query user related data, and there is no limitation to how many views or what's kind of data should present.
 
 ![SAM screen shot](img/myassets2.PNG)
 
