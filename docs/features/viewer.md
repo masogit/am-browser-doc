@@ -32,7 +32,7 @@ This area intends to showing statistics data of group by result. It can show the
     - Has a switch button on the up-right corner back to list table mode
     - Check out more details in the Distribution section
 
-## Header menu
+### Header menu
 A header menu at the bottom of Header navigation contains following components from left to right:
 
 1. Title
@@ -83,7 +83,7 @@ A header menu at the bottom of Header navigation contains following components f
         - Fields to be used for Bar code generating are definable
         > Note: The BarCode printing function only available in Chrome.
 
-## Content
+### Content
 Under header menu, it is the content of report data retrieved from AM web service. It has two modes:
 
 - Table(default mode)
@@ -91,7 +91,7 @@ Under header menu, it is the content of report data retrieved from AM web servic
 > Switch mode by clicking on Topology/table mode switch button from header menu.  
 > By default, AM Browser displays result in table mode
 
-### Table mode     
+#### Table mode     
 - Header:
     - Render Fields name and along with order by icon if the column is chosen to be order by
     - Display Header by label name of field by default, but if it has alias, display alias then
@@ -112,7 +112,7 @@ Under header menu, it is the content of report data retrieved from AM web servic
 
  ![Viewer screen shot](img/detail1.png)
 
-### Topology mode
+#### Topology mode
 - Display a map of links
 - Display each record as a node which renders an icon according to the type of equipment and text from self description of the record
 

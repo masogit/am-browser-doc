@@ -2,7 +2,7 @@
 
 The Graph module provides data query, statistics and visual graph features. Admin users can input AQL (Asset Manager Query Language) to query data, for those aggregation data, it is easy to configure a Graph for presenting.
 
-### Graph styles and designer
+## Graph styles and designer
 Currently, there are 3 types of Graph with designer. These graphs are built with original Grommet components, each Grommet component has several sub types:
 
 - Chart: Bar, Line, Area
@@ -11,7 +11,7 @@ Currently, there are 3 types of Graph with designer. These graphs are built with
 
 > Recommend use aggregation AQL to query data to configure Graph.
 
-### AQL data and configuration
+## AQL data and configuration
 
 Admin user inputs aggregation AQL, like: `select seBasis, count(*) from amNature group by seBasis`
 
@@ -19,7 +19,7 @@ Admin user inputs aggregation AQL, like: `select seBasis, count(*) from amNature
 - Configure Graph form
 - Attached view
 
-#### Preview
+### Preview
 
 After you input aggregation AQL, you can use Preview to get a query result. It should have some columns.
 
@@ -49,11 +49,11 @@ After you input aggregation AQL, you can use Preview to get a query result. It s
     </tr>
 </table>
 
-#### Configure Graph designer
+### Configure Graph designer
 
 After getting a query result table with some columns,  you can create a graph from Graph designer. Specify **Column** of Graph designer from one of columns in the query result table.
 
-##### Basic properties
+#### Basic properties
 - **Column** (mandatory)
 > Ater query AQL, it should display some options in column. **Column** options will only dipslay numeric fields. In Chart, options are displayed as checkbox for multipule selection, In Meter or Distribution, options are displayed as radio box for single selection.
 
@@ -66,7 +66,7 @@ After getting a query result table with some columns,  you can create a graph fr
     - Size
     - X Axis placement in Chart
 
-##### Advance properties
+#### Advance properties
 -  Legend properties
     - Legend position
     - Legend units
@@ -83,7 +83,7 @@ After getting a query result table with some columns,  you can create a graph fr
 
 ![Graph](../img/graph3.png)
 
-#### Attached View
+### Attached View
 
 Attach a graph with a View, then you can click an element. A page will pop up and show records list as filtered result. You should  input Field and select Value to configure the filter.
 >IF you input  aggregation AQL, it will display some columns, **Value** is one of the columns.
@@ -93,7 +93,7 @@ Attach a graph with a View, then you can click an element. A page will pop up an
 - Field and Value is null. When you click an element, it will query the complete set of data in the View.
 - Field and Value is not null. It means you put the **Value** values as a condition to the Field, will query with this condition in the VIEW .And return a subset of View.
 
-### Example
+## Example
 
 If you want to create a Graph like this:
 

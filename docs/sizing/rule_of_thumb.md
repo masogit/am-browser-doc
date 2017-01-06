@@ -1,18 +1,18 @@
 # Rules of thumb
 (All the web related application servers in this section, if not mentioned, are of 64-bit.)
-### Asset Manager Browser
+## Asset Manager Browser
 Asset Manager Browser is built on an embedded NodeJS server, which is more efficient than the conventional Asset Manager components.
 
 A standard Asset Manager Browser environment with 250 ~ 500 concurrent users requires approximately 2 GB of RAM.
-For the same number of concurrent users, the CPU utilization of Asset Manager Browser is about 60% less than REST Server’s. 
+For the same number of concurrent users, the CPU utilization of Asset Manager Browser is about 60% less than REST Server’s.
 
 Concurrent User Count | Estimated Memory Usage
-------------------| ------------------ 
+------------------| ------------------
 250 ~ 500 | 2 GB
 
 <br/>
 
-### Central database for Asset Manager Browser
+## Central database for Asset Manager Browser
 
 In Asset Manager Browser 1.1, a central database (MongoDB) is introduced to store all the configurations like views, AQLs, and Graphs.
 
@@ -24,7 +24,7 @@ For horizontal scaling mode that have more than four Asset Manager Browser nodes
 
 <br/>
 
-### Asset Manager REST Server
+## Asset Manager REST Server
 
 
 The current version of REST Server is mostly based on the Asset Manager Web Service, except the following changes:
@@ -39,13 +39,13 @@ There are several `major checkpoints` before going to production:
 *Best practice configurations have been already configured during the service installation, increase the value only when needed.*
 
 Concurrent User Count | Estimated Memory Usage
-------------------| ------------------ 
+------------------| ------------------
 250  | 4 GB (1.75 GB for JVM, 700~900 MB for overhead and cache, 5~10 MB per connection)
 
 * Connection pool configurations (aamapi.ini):
 
 Concurrent User Count | CnxPoolIdleSize | CnxPoolMaxSize
-------------------| ------------------ | ------------------ 
+------------------| ------------------ | ------------------
 250  | CnxPoolMaxSize - 5 | 500 or higher
 
 For other details on Asset Manager Web Service Server, refer to [Asset Manager 9.60 Deployment Sizing Guide](https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM02559120)

@@ -2,13 +2,13 @@
 
 Insight is a new type of report, Admin user and Power user can save their own reports.
 
-### Visible styles
+## Visible styles
 There are two Visible styles:
 
 - Public(default):You can only accept admin Graphs.
 - Self:You can edit your Graphs(like add and delete).
 
-### Display styles
+## Display styles
 
 ![Viewer screen shot](img/insight-base.PNG)
 
@@ -22,7 +22,7 @@ There are two display styles:
 
 >Carousel or not Carousel display the Graphs of the switch category.
 
-### Category
+## Category
 ![Viewer screen shot](img/tab.PNG)
 
 Based on your business requirement, you can create different category as tabs.
@@ -36,7 +36,7 @@ In the Edit mode, you can also delete a category by clicking Close Tab.
 
 
 
-### Flexible layout
+## Flexible layout
 
 
 
@@ -51,7 +51,7 @@ In the Edit mode, you can create a flexible layout. Each block can be split by r
 
 
 
-### Attach Graphs
+## Attach Graphs
 
 In the Edit mode, you can attach a Graph to any block that does not have a sub block in layout.
 
@@ -59,14 +59,14 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 
 
-### Single Graph view
+## Single Graph view
 
 Click each Graph title, get a single view to display this Graph with details.(You should click Expand Tab to show more Grath details.)
 
-### Graph Item view
+## Graph Item view
 Click each Graph item,get a Record list view to display this item with details.If continue click each record,will get a view about more details.
 
-### Example:
+## Example
 
 If you want to count the cost of your company a year,you can create a Histogram by click Builder-->Graph.Then if you want to display it like this:
 ![Viewer screen shot](img/edit_view.PNG)

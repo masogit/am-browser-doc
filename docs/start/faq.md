@@ -1,4 +1,4 @@
-### AM Browser FAQ
+## AM Browser FAQ
 
 - How does the access control work?
 

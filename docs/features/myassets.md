@@ -1,7 +1,7 @@
-My It Assets module is some out-of-box views for any AM users, it can be customized by administrator. 
+My It Assets module is some out-of-box views for any AM users, it can be customized by administrator.
 This module is the default page for Normal User.
 
-### Default views
+## Default views
 
 In AM Browser 1.1, there are four out-of-box views:
 
@@ -12,13 +12,13 @@ In AM Browser 1.1, there are four out-of-box views:
 
 Users will easy find assets data related self from this module.
 
-### Summary
+## Summary
 
 Display a dashboard for aggregation data from all views in My Assets module.
 
 ![SAM screen shot](img/myassets1.PNG)
 
-### Customization
+## Customization
 
 This module designed for a shortcut views category to query user related data, although there is no limitation to how many views or what's kind of data should present.
 

@@ -1,6 +1,6 @@
 # AM Browser Blog
 
-### News
+## News
 
 - [New Asset Manager 9.6 and Asset Manager Browser: New UX makes asset management easier than ever](http://community.hpe.com/t5/IT-Service-Management/New-Asset-Manager-9-6-and-Asset-Manager-Browser-New-UX-makes/ba-p/6877256#.V4QgqvkrKM8 )
 
@@ -8,7 +8,7 @@
 
 
 
-### Document update
+## Document update
 
 - **2016.09.01**
 
