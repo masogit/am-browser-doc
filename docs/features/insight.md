@@ -5,20 +5,22 @@ Insight is a new type of report, Admin user and Power user can save their own re
 ## Visible styles
 There are two Visible styles:
 
-- Public(default):You can only accept admin Graphs.
-- Self:You can edit your Graphs(like add and delete).
+- Public(default):  
+    All users, have accessing rights to Insight module, accept a published graphs report called **Overall** from user **Admin**. All changes user Admin made for **Overall** graph report will be synchronized for other users.
+- Self:  
+    Define your own graphs report. AM Browser allows you to attach or remove a graph from report, make a graph to be showed horizontally or vertically, bind two graphs in row and etc.
 
 ## Display styles
 
 ![Viewer screen shot](img/insight-base.PNG)
 
-There are two display styles:
+There are two modes to present report:
 
-- Enable Carouse: Automatically displays Graphs one by one every 10 seconds.
+- Flat(default): Displays Graphs on a single page as per designed layout.
 
-(If you feel 10 seconds too long ,you can jump to the next graph by clicking on the button below the graph.)
+- Carouse: Automatically displays Graphs one by one every 10 seconds.
 
-- Disable Carousel(default): Displays Graphs on one page as per designed layout.
+(If interval of 10 seconds are too long to you, click arrow button switching to next graph manually.)
 
 >Carousel or not Carousel display the Graphs of the switch category.
 
@@ -27,12 +29,12 @@ There are two display styles:
 
 Based on your business requirement, you can create different category as tabs.
 
-To create a new category, enable the Edit mode and then click Add Tab.
+To create a new category, enable Edit mode and then click **+** button to add a new tab.
 
 
-In the Edit mode, you can also rename a category by double-clicking it.
+To rename a category, in the Edit mode, double click the tab name to enter a new name.
 
-In the Edit mode, you can also delete a category by clicking Close Tab.
+To remove a category, in the Edit mode, click **X** button.
 
 
 
@@ -40,7 +42,7 @@ In the Edit mode, you can also delete a category by clicking Close Tab.
 
 
 
-In the Edit mode, you can create a flexible layout. Each block can be split by row or column. Then, you can attach a Graph.
+In the Edit mode, you can create a flexible layout. Each block can be split by row or column. You can attach a Graph in each separated sector.
 
 - Split row
 - Split column
@@ -61,27 +63,25 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 ## Single Graph view
 
-Click each Graph title, get a single view to display this Graph with details.(You should click Expand Tab to show more Grath details.)
+To review a graph with more details, click enlarge button ![enlarge button](img/enlarge-btn.PNG) into expanding mode.
+Within expanding mode, AM Browser shows you the graph with a table of records.
 
 ## Graph Item view
 Click each Graph item,get a Record list view to display this item with details.If continue click each record,will get a view about more details.
 
 ## Example
 
-If you want to count the cost of your company a year,you can create a Histogram by click Builder-->Graph.Then if you want to display it like this:
+Let's assume you want to have a view of annual cost of your company.
+To have that, you need to go to builder to create a graph first, and then follow steps below to have a report like below:
 ![Viewer screen shot](img/edit_view.PNG)
-> 1.You should confirm the Graph is existing.
+> 1.Before attaching graph, please make sure the graph exists, and it is defined properly.
 
->2.Find a position you want to create.
+>2.Decide where you want to put graph at, Public or Self. An existing category or create a new one.
 
 >3.Click Add tab to create a flexible layout.
 
->4.Click Attach a Graph and select a Graph which you want to attach.
+>4.Hit **Attach a Graph** button and select a Graph you want to attach.
 
->5.You can click Row or Column to change the arrangement of the flexible layout.
+>5.Click **Row** or **Column** to change layout organization.
 
->6.Click Save Tab will get a confirm view.You cotinue clik Confirm Button.It will save the Graph.
-
-If you want to see the Graph detials,you should clik Expand Tab.
-
-If you want to see the Graph item detials,you should click the item.
+>6.Click **Save** and confirm the modifications.
