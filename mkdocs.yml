@@ -6,38 +6,49 @@ repo_url: https://hpln.hpe.com/contentoffering/am-browser
 repo_name: Download
 
 pages:
-- Overview: index.md
-- Getting Started:
+- Home: index.md
+- Release Notes:
+    - What's new: index.md
+- Get Started:
+    - Overview: index.md
+- Install:
     - Installation: start/installation.md
+    - Security: start/security.md
+    - Sizing Guide:
+        - Introduction: sizing/introduction.md
+        - Sizing Questions: sizing/sizing_questions.md
+        - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
+        - Rules of thumb: sizing/rule_of_thumb.md
+        - Appendix A - Asset Manager Browser benchmark performance test results: sizing/appendix_a.md
+        - Appendix B - Asset Manager Browser processing capability test results : sizing/appendix_b.md
+        - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
+        - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
+        - Appendix E - Links : sizing/appendix_e.md
+- Upgrade:
     - Upgrade and Migration: start/upgrade.md
+- Integrate:
+    - UCMDB: index.md
+    - HPE Live Network: index.md
+    - Slack: blogs.md
+- Administer:
     - Configuration: start/configuration.md
     - Light Weight SSO: start/lwtsso.md
-    - Troubleshooting: start/troubleshooting.md
-    - Security: start/security.md
-    - FAQ: start/faq.md
-- Features:
+    - Builder:
+        - View: features/builder/view.md
+        - Graph: features/builder/graph.md
+        - Template: features/builder/template.md
+- Use:
     - Search: features/search.md
     - Insight: features/insight.md
     - Viewer: features/viewer.md
-    - Builder:
-      - View: features/builder/view.md
-      - Graph: features/builder/graph.md
-      - Template: features/builder/template.md
     - SAM: features/sam.md
     - My Assets: features/myassets.md
     - Adapter: features/adpater.md
-- Sizing Guide:
-    - Introduction: sizing/introduction.md
-    - Sizing Questions: sizing/sizing_questions.md
-    - Deployment Modes and Sizing: sizing/deployment_modes_and_sizing.md
-    - Rules of thumb: sizing/rule_of_thumb.md
-    - Appendix A - Asset Manager Browser benchmark performance test results: sizing/appendix_a.md
-    - Appendix B - Asset Manager Browser processing capability test results : sizing/appendix_b.md
-    - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
-    - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
-    - Appendix E - Links : sizing/appendix_e.md
-- Community:
-    - Slack: slack.md
+- Troubleshoot:
+    - Troubleshooting: start/troubleshooting.md
+    - FAQ: start/faq.md
+- Develop:
+    - Icon Map: index.md
     - Blogs: blogs.md
 
 theme_dir: 'material'
