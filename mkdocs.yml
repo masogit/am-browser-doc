@@ -8,9 +8,9 @@ repo_name: Download
 pages:
 - Home: index.md
 - Release Notes:
-    - What's new: index.md
+    - What's new: new.md
 - Get Started:
-    - Overview: index.md
+    - Overview: overview.md
 - Install:
     - Installation: start/installation.md
     - Security: start/security.md
@@ -27,9 +27,8 @@ pages:
 - Upgrade:
     - Upgrade and Migration: start/upgrade.md
 - Integrate:
-    - UCMDB: index.md
-    - HPE Live Network: index.md
-    - Slack: blogs.md
+    - UCMDB: features/adpater.md
+    - Slack: slack.md
 - Administer:
     - Configuration: start/configuration.md
     - Light Weight SSO: start/lwtsso.md
