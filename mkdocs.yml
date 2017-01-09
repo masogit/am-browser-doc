@@ -11,6 +11,7 @@ pages:
     - Installation: start/installation.md
     - Upgrade and Migration: start/upgrade.md
     - Configuration: start/configuration.md
+    - Light Weight SSO: start/lwtsso.md
     - Troubleshooting: start/troubleshooting.md
     - Security: start/security.md
     - FAQ: start/faq.md
