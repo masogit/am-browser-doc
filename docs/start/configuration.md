@@ -14,8 +14,8 @@ Then, configure the following sections of the `am-browser-config.properties` fil
 Please reference the AM documentation to configure the LDAP settings in AM:
 http://docs.software.hpe.com/AM/9.60/Content/Administration/ch12s07se03.html
 
-> Note: In order to set the certificate file for LDAP over SSL/TLS integration with AM REST server, the configuration file(aamapi96.ini) should be located in following directory:
-> C:\Windows\System32\config\systemprofile\AppData\Roaming\HPE\AssetManager\conf\aamapi96.ini
+> Note: In order to set the certificate file for LDAP over SSL/TLS integration with AM REST server, the configuration file (aamapi<version>.ini) should be located in following directory:
+> C:\Windows\System32\config\systemprofile\AppData\Roaming\HPE\AssetManager\conf\aamapi<version>.ini
 
 ## AM Browser service
 
@@ -60,7 +60,7 @@ power = <AM user role1>, <AM user role2>
 guest = @anyone
 ```
 
-`@admin` stands for users who have AM administration rights.  **In this version of AM Browser, AM Browser Admin can only be @admin.**
+`@admin` stands for users who have AM administrative rights.  **In this version of AM Browser, AM Browser Admin can only be @admin.**
 
 `@anyone` stands for all AM users including the guest users.
 
@@ -70,7 +70,7 @@ You can assign one or several AM user roles to `power` or `guest`, for example, 
 
 ## Database configuration
 
-AM Browser support to save configuration data to **file** DB or **MongoDB**, type:
+AM Browser allows you to save configuration data to **file** DB or **MongoDB**, type:
 
 - file
 - mongo
@@ -89,7 +89,7 @@ username =
 password =
 ```
 
-> MongoDB service allow to install in different machine with AM Browser node service. Multiple AM Browser services support configure to one MongoDB, to implement vertical extension.
+> MongoDB service does not have to be installed on the computer that runs the AM Browser node service. Multiple AM Browser services can be linked to one MongoDB to implement vertical extension.
 
 ## Slack
 
@@ -151,7 +151,7 @@ AMB_NODE_CSRF | node.enable_csrf | `true` or `false`
 
 ## Icon Map
 Icons in topology mode of view can be configured by Admin user. AM Browser allows mapping a specified icon to tables or records.
-To customize icons, you can edit iconMap.json file under <AM Browser installation folder>/app folder.
+To customize icons, you can edit iconMap.json file in the <AM Browser installation folder>/app folder.
 See the json format file structured as below:
 
   - defaultIcon: define default icon
@@ -178,7 +178,7 @@ With an array as value, AM Browser enables you specifying icons to record level,
 In above example:
 
 - "field": field name from AM
-- "like": operator, matching condition. It supports input user type name directly, i.e. Yes for bAdminRight. Also, we have another operator "eq". To note, both of them can be string or array.
+- "like": operator, matching condition. You can input user type name directly, i.e. Yes for bAdminRight. Another operator available is "eq". Both of them can be string or array.
 - "icon": defines icon name. Those names are referenced from [Grommet Icon (version 1.1.0).](https://grommet.github.io/docs/icon)
 
-> Restart AM Browser service to make modifications effect
+> Restart AM Browser service to make modifications take effect.
