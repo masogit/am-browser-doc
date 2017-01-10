@@ -1,4 +1,4 @@
-# AM Browser Adapter
+# AM Browser Adapter (UCMDB)
 
 AM Browser has two features that are related to HPE UCMDB:
 
@@ -35,7 +35,7 @@ adapter = true
 
 ### Features
 
-Below are features implemented in AMB Adapter modules.
+The features implemented in AMB Adapter modules are as follows.
 
 #### Dynamic status
 
