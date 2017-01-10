@@ -11,6 +11,7 @@ pages:
     - What's new: new.md
 - Get Started:
     - Overview: overview.md
+    - Known issues: issues.md
 - Install:
     - Installation: start/installation.md
     - Security: start/security.md
