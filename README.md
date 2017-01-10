@@ -21,8 +21,18 @@ mkdocs build --clean
 
 ### Test
 
-Mkdocs support start local web server to preview document pages:
+Mkdocs supports start local web server to preview document pages:
 
 ```
 mkdocs serve
 ```
+
+### Deploy
+
+Mkdocs supports build static html pages then deploy/push github pages automatically in origin **gh-pages** branch.
+
+```
+mkdocs gh-deploy
+```
+
+> Need **manually** delete remote branch `gh-pages` if exist
