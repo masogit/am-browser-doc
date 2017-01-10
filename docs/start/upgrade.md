@@ -9,18 +9,18 @@ HPE updates the installation files once a new version is available. The steps to
     - Tomcat <am-browser-rest>\apache-tomcat-8.0.36\conf\server.xml if it is modified.
 1. Copy files. Unzip the new package to the correspondent folders to overwrite the old files.
 
-> If you try to deploy REST server war again, make sure that you unregister the previous service and register new service again.
+> If you try to deploy REST server (the .war file) again, make sure you unregister the previous service and register new service again.
 
 ## Migrate file DB to MongoDB
 
-AM Browser 1.1 supports both file DB and MongoDB to store the configuration data. Also supports migrate data from file DB to MongoDB.
+AM Browser 1.1 supports both file DB and MongoDB to store the configuration data. It also supports migrating data from file DB to MongoDB.
 
-Ensure configure correct connection parameter for both file DB folder and MongoDB, reference chapter [Configuration](configuration/#database-configuration). Run below script by administrator or root right:
+Make sure to correctly configure the connection parameter for both file DB folder and MongoDB, refer to section [Configuration](configuration/#database-configuration) for more information. Run the following script with administrator or root rights:
 
 - `db_migrate.bat` in window package
 - `db_migrate.sh` in linux package
 
-*Below are the out lins from command*
+*The lines from command*
 ```
 info: [Migrating] Migrating from file to mongodb
 info: [Migrating] Loading data from folder: ./db
@@ -33,4 +33,4 @@ info: [Migrating] Mongodb localhost connected
 info: [Migrating] 42 record(s) already be imported successfully.
 ```
 
-> Not support MongoDB migrate to file DB
+> MongoDB migrating to file DB is not supported.
