@@ -2,12 +2,12 @@
 
 AM Browser provides you with the following features:
 
-- Providing quick access to my IT assets information
-- Create views in mins and expose the view as both list and topology modes
-- Export PDF reports with customized formats and styles (support barcode)
-- Allow query data by AQL (AM query language) and flexible customize graphical formats
-- Manage divers personal dashboard composited by graphical
-- A simple SAM (Software Asset Management) reports module  
+- Quick access to your IT assets information
+- Create views in minutes and expose the view in both list and topology modes
+- Export reports to PDF with customized formats and styles (barcode can also be exported)
+- Query with AQL (AM query language) and show the data with flexible and customized graphical formats
+- Customize personal dashboard
+- A simple SAM (Software Asset Management) report module  
 - Monitor AM-UCMDB integration status
 
 ![Features](img/amb_features.png)
@@ -16,9 +16,9 @@ AM Browser provides you with the following features:
 
 AM Browser provides you with the following use cases:
 
-- Audit : Get Effective license positioning for major SAM vendors with SAM Dashboard
-- On demand self-service reporting : Self-service reporting for any users in an organization. For ex, a datacentre manager trying to search for a location of an asset via asset tag; Asset receiving team validating the asset ownership of an end user asset via AMB.
-- Topology visualization : Change control manager wanted to check list of VMs connected to a ESX server.
+- Audit: Get Effective license positioning for major SAM vendors with SAM Dashboard
+- On-demand self-service reporting: Self-service reporting for any user in an organization. For example, a datacentre manager trying to search for a location of an asset via asset tag; Asset receiving team validating the asset ownership of an end user asset via AMB.
+- Topology visualization: Change control manager wants to check the list of VMs connected to a ESX server.
 
 
 ## Roles
