@@ -24,16 +24,16 @@ The workspace of a view contains three major areas in the center area of the pag
 This area shows the statistics of the group by result. It shows the result in two modes:
 
  - Legend mode  
-    - Located at left side panel of Content
-    - Show a statistics list table with fields chosen to be group by, quantity and a number of total at footer
-    - Contain switch button to distribution mode on the up-right corner
+    - Located in the left side panel of Content
+    - Shows a statistics list with grouped records, the quantity and the sum
+    - Can switch to distribution mode by clicking the button at the top right corner
  - Distribution mode
-    - Show statistics result in blocks and distribution way
-    - Has a switch button on the up-right corner back to list table mode
-    - Check out more details in the Distribution section
+    - Shows statistics result in blocks and distribution way
+    - Can switch to Legend mode by clicking the button at the top right corner
+    - More details in the Distribution section
 
 ### Header menu
-A header menu at the bottom of Header navigation contains following components from left to right:
+A header menu contains the following components:
 
 1. Title
 2. Search Input and Search Tags  
