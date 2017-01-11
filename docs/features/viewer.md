@@ -1,27 +1,27 @@
 # AM Browser Viewer
 
-Viewer module is one of the core functionalities AM Browser has provided. Through views, user are able to see specific reports formed by pre selected fields.
-Before views can be accessed, they have to be defined by admin user first.
+The Viewer module is one of the core functionalities of AM Browser. Through views, users are able to see specific reports formed by pre-selected fields.
+Before views can be accessed, they have to be defined by the Admin user first.
 
-Three types of user using views:
+Three types of users can use views:
 
-- Admin user - They can create, modify, delete views and review result of view
-- Power user - They have only viewing rights to the views defined by admin user
-- Guest user - Guest user access views through url address, which is published by above two types user
+- Admin user who can create, modify, delete views and review the results of views.
+- Power user who only have read rights to the views defined by admin user.
+- Guest user who can access views through a URL, which is published by Admin or Power users.
 
 ## WorkSpace
 
-The workspace of view contains three major areas in center area of the page:
+The workspace of a view contains three major areas in the center area of the page:
 
 - Statistics Area
 - Header Menu
 - Content
 
 > All settings made on a view will be saved in Web Browser's localStorage.  
-> Settings include order by, group by parameters and mode of topology or table for the content etc.
+> Settings include order by, group by parameters and mode of topology, and so on.
 
 ### Statistics Area
-This area intends to showing statistics data of group by result. It can show the result as two mode:
+This area shows the statistics of the group by result. It shows the result in two modes:
 
  - Legend mode  
     - Located at left side panel of Content
