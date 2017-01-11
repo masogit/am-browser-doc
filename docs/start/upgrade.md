@@ -7,7 +7,7 @@ HPE updates the installation files once a new version is available. The steps to
     - File <am-browser>\am-browser-config.properties
     - Folder <am-browser>\db
     - Tomcat <am-browser-rest>\apache-tomcat-8.0.36\conf\server.xml if it is modified.
-1. Copy files. Unzip the new package to the correspondent folders to overwrite the old files.
+1. Unzip the new package, copy the files mentioned in step 1 to overwrite the old ones .
 
 > If you try to deploy REST server (the .war file) again, make sure you unregister the previous service and register new service again.
 
