@@ -1,15 +1,15 @@
 # AM Browser Graph
 
-The Graph module provides data query, statistics and visual graph features. Admin users can input AQL (Asset Manager Query Language) to query data, for those aggregation data, it is easy to configure a Graph for presenting.
+The Graph module provides data query, statistics and visual graph features. Admin users can input AQL (Asset Manager Query Language) to query data. It is easy to configure a Graph for presenting aggregation data.
 
 ## Graph styles and designer
-Currently, there are 3 types of Graph with designer. These graphs are built with original Grommet components, each Grommet component has several sub types:
+Currently, there are 3 types of Graphs with designer. These graphs are built with original Grommet components, each Grommet component has several sub types:
 
 - Chart: Bar, Line, Area
 - Meter: Bar, Arc, Circle, Spiral
 - Distribution
 
-> Recommend use aggregation AQL to query data to configure Graph.
+> We recommend that you use aggregation AQL to query data and configure Graph.
 
 ## AQL data and configuration
 
@@ -51,11 +51,11 @@ After you input aggregation AQL, you can use Preview to get a query result. It s
 
 ### Configure Graph designer
 
-After getting a query result table with some columns,  you can create a graph from Graph designer. Specify **Column** of Graph designer from one of columns in the query result table.
+After getting a query result table with some columns,  you can create a graph from the Graph designer. Specify value of the **Column** of Graph designer with one of columns in the query result table.
 
 #### Basic properties
 - **Column** (mandatory)
-> Ater query AQL, it should display some options in column. **Column** options will only dipslay numeric fields. In Chart, options are displayed as checkbox for multipule selection, In Meter or Distribution, options are displayed as radio box for single selection.
+> Ater you query with an AQL, it displays some options in the column. **Column** options will only dipslay numeric fields. In Chart, options are displayed as checkboxes for multiple selections. In Meter or Distribution, options are displayed as radio boxes for single selection.
 
 - Label
     - X Axis label in Chart
@@ -66,7 +66,7 @@ After getting a query result table with some columns,  you can create a graph fr
     - Size
     - X Axis placement in Chart
 
-#### Advance properties
+#### Advanced properties
 -  Legend properties
     - Legend position
     - Legend units
@@ -85,28 +85,28 @@ After getting a query result table with some columns,  you can create a graph fr
 
 ### Attached View
 
-Attach a graph with a View, then you can click an element. A page will pop up and show records list as filtered result. You should  input Field and select Value to configure the filter.
->IF you input  aggregation AQL, it will display some columns, **Value** is one of the columns.
+Attach a graph with a View, then you can click an element. A page will pop up and show filtered records. You can input Field and select Value to configure the filter.
+>If you input aggregation AQL, it will display some columns, **Value** is one of the columns.
 
 >**Field** is one of the columns in the View.
 
 - Field and Value is null. When you click an element, it will query the complete set of data in the View.
-- Field and Value is not null. It means you put the **Value** values as a condition to the Field, will query with this condition in the VIEW .And return a subset of View.
+- Field and Value is not null. It means you put the **Value** values as a condition to the Field, it will query with this condition in the VIEW and return a subset of View.
 
 ## Example
 
-To create a Graph like below:
+To create a Graph:
 
 > ![Graph](../img/graph4.PNG)
 
-> 1. Click New Tab to create a new Graph.
+> 1. Click the New Tab to create a new Graph.
 
-> 2. Input the Name and aggregation AQL in the right textarea, then it will display a records list.
+> 2. Input the Name and aggregation AQL in the right side text area, then it will display a records list.
 
-> 3. Input Category to define the main menu item in the left bar.
+> 3. Input Category to define the main menu item in the left side bar.
 
-> 4. Select options in Column, a Graph will display (if there is no options, please check up AQL). Then configure parameters for Graph display
+> 4. Select options in Column, a Graph will be displayed (if there is no options, check the AQL). Then configure parameters for the Graph are displayed.
 
 > 5. Try these functions: Query, Save, Delete, Mail and Download.
 
-If you want to click the element of Graph to get a records list view. You should click Attached View, select a existing View and configure Field and Value.
+If you want to click the element of Graph to get a record list view, you should click Attached View, select a existing View and configure Field and Value.
