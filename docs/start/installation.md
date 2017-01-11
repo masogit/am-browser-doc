@@ -28,6 +28,8 @@ It is recommended that AM Browser connects to a **Standby RDBMS**.
 
 ## Installation of AM REST Service for the first time
 
+> **If your OS is `Windows Server 2008 R2`, please run the `.bat` or `.cmd` files in command line to make sure they can be executed properly.** 
+
 1. Preparation.
 
     We recommend that you install AM REST Service on a server that has either AM Windows Client or AM Web Service installed and can connect to the AM database, the configuration of ODBC (64-bit) can be reused to install the REST Service.
