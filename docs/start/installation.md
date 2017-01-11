@@ -8,6 +8,8 @@ For Asset Manager 9.60 Support Matrix, see [https://softwaresupport.hpe.com/grou
 
 For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310](https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310).
 
+> AM Browser packages are self-contained. It does not require any other AM components during installation. What you need is only the AM database and a well configured database connection that can be used by AM.
+
 ## Services
 
 AM Browser has the following two services.
