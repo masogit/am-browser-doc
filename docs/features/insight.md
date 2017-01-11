@@ -2,39 +2,38 @@
 
 Insight is a new type of report, Admin user and Power user can save their own reports.
 
-## Visible styles
-There are two Visible styles:
+## Visibility
+There are two visibility options:
 
-- Public(default):  
-    All users, have accessing rights to Insight module, accept a published graphs report called **Overall** from user **Admin**. All changes user Admin made for **Overall** graph report will be synchronized for other users.
+- Public (default):  
+    All users who can access the Insight module will have a published graph report called **Overall** from the **Admin** user. All changes Admin made for the **Overall** graph report will be synchronized for other users.
 - Self:  
-    Define your own graphs report. AM Browser allows you to attach or remove a graph from report, make a graph to be showed horizontally or vertically, bind two graphs in row and etc.
+    Define your own graphs report. AM Browser allows you to attach or remove a graph from a report. A graph can be displayed horizontally or vertically, you can also bind two graphs in a row.
 
 ## Display styles
 
 ![Viewer screen shot](img/insight-base.PNG)
 
-There are two modes to present report:
+There are two modes to present a report:
 
-- Flat(default): Displays Graphs on a single page as per designed layout.
+- Flat (default): Graphs are displayed on a single page as per designed layout.
 
-- Carouse: Automatically displays Graphs one by one every 10 seconds.
+- Carouse: Graphs are automatically displayed one by one every 10 seconds.
 
-(If interval of 10 seconds are too long to you, click arrow button switching to next graph manually.)
+If the interval (10 seconds) is too long to you, click the arrow button to switch to the next graph manually.
 
->Carousel or not Carousel display the Graphs of the switch category.
+>The Graphs of the switch category are displayed.
 
 ## Category
 ![Viewer screen shot](img/tab.PNG)
 
-Based on your business requirement, you can create different category as tabs.
+Based on your business requirement, you can create different categories as tabs.
 
-To create a new category, enable Edit mode and then click **+** button to add a new tab.
+To create a new category, enable the Edit mode and then click the **+** button to add a new tab.
 
+To rename a category, in the Edit mode, double-click the tab name to enter a new name.
 
-To rename a category, in the Edit mode, double click the tab name to enter a new name.
-
-To remove a category, in the Edit mode, click **X** button.
+To remove a category, in the Edit mode, click the **X** button.
 
 
 
@@ -63,25 +62,25 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 ## Single Graph view
 
-To review a graph with more details, click enlarge button ![enlarge button](img/enlarge-btn.PNG) into expanding mode.
-Within expanding mode, AM Browser shows you the graph with a table of records.
+To review a graph with more details, click the enlarge button ![enlarge button](img/enlarge-btn.PNG) to enter the expanded mode.
+In the expanded mode, AM Browser shows you the graph with a table of records.
 
 ## Graph Item view
-Click each Graph item,get a Record list view to display this item with details.If continue click each record,will get a view about more details.
+Click a Graph item, you will get a Record list view to display this item with details. If you continue to click a record, you will get a view with more details.
 
 ## Example
 
-Let's assume you want to have a view of annual cost of your company.
-To have that, you need to go to builder to create a graph first, and then follow steps below to have a report like below:
+Assume that you want to have a view of annual cost of your company.
+To do this, you need to go to the builder to create a graph first, and then follow these steps to create a report:
 ![Viewer screen shot](img/edit_view.PNG)
-> 1.Before attaching graph, please make sure the graph exists, and it is defined properly.
+> 1.Before attaching the graph, make sure the graph exists, and it is defined properly.
 
->2.Decide where you want to put graph at, Public or Self. An existing category or create a new one.
+>2.Decide where you want to put the graph, Public or Self, and if you want to use n existing category or create a new one.
 
->3.Click Add tab to create a flexible layout.
+>3.Click Add to create a flexible layout.
 
->4.Hit **Attach a Graph** button and select a Graph you want to attach.
+>4.Click the **Attach a Graph** button and select a Graph you want to attach.
 
->5.Click **Row** or **Column** to change layout organization.
+>5.Click **Row** or **Column** to change the layout organization.
 
 >6.Click **Save** and confirm the modifications.
