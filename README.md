@@ -35,4 +35,8 @@ Mkdocs supports build static html pages then deploy/push github pages automatica
 mkdocs gh-deploy
 ```
 
-> Need **manually** delete remote branch `gh-pages` if exist
+> Need delete remote branch `gh-pages` if exist
+
+```
+git push origin :gh-pages && mkdocs gh-deploy
+```
