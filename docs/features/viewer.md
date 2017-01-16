@@ -85,7 +85,7 @@ A header menu contains the following components:
 Below the header menu is the content of the report data retrieved from AM web service. It has two modes:
 
 - Table(default mode)
-- Topology
+- Topology  
 > Switch mode by clicking the Topology/table mode switch button on the header menu.  
 > By default, AM Browser displays results in table mode.
 

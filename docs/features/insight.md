@@ -62,7 +62,7 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 ## Single Graph view
 
-To review a graph with more details, click the enlarge button ![enlarge button](img/enlarge-btn.PNG) to enter the expanded mode.
+To review a graph with more details, click the enlarge button ![enlarge button](img/enlarge-btn.png) to enter the expanded mode.
 In the expanded mode, AM Browser shows you the graph with a table of records.
 
 ## Graph Item view
