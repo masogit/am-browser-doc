@@ -44,20 +44,25 @@ In AM Browser you will find a simple module to display the status dashboard. As 
 
 >  *Products and versions don't have computers listed if there are no computers installed them.*
 
-# BreadCrumb
-At the top of page, we place a special breadcrumb. What makes it different is each entry of the breadcrumb is a dropdown menu instead of a simple link.  
-By using the menu, AM Browser allows you to navigate to last level of vendor or switch product freely.  
-For instance, you are scanning AssetManager product purchased from vendor HP:
+## Usability
 
-![SAM screenshot - breadcrumb](img/sam5.png)
+- **BreadCrumb**
 
-You can switch to your own other products of vendor HP like "*HP Discovery and Dependency Mapping Inventory*" or "*HP Network Node Manager i*".  
-Moreover, you can change vendor at this level by simply choose from vendor drop down menu.
+  At the top of page, we place a special breadcrumb. What makes it different is each entry of the breadcrumb is a dropdown menu instead of a simple link.  
+  By using the menu, AM Browser allows you to navigate to last level of vendor or switch product freely.  
+  For instance, you are scanning AssetManager product purchased from vendor HP:
 
-# Sort Menu
-We add a sort menu at each card page allowing you to sort vendors or products with some of their attributes.  
-With this ability, we sort them with value of that contained attribute and emphasize them.  
-By default, we sort vendors with attribute of **Non-Compliance** and products with **Gap**.
+  ![SAM screenshot - breadcrumb](img/sam5.png)
 
-# Search
-Next to sort menu, we implement a search input enabling you to quick search from vendors or products.
+  You can switch to your own other products of vendor HP like "*HP Discovery and Dependency Mapping Inventory*" or "*HP Network Node Manager i*".  
+  Moreover, you can change vendor at this level by simply choose from vendor drop down menu.
+
+- **Sort Menu**
+
+  We add a sort menu at each card page allowing you to sort vendors or products with some of their attributes.  
+  With this ability, we sort them with value of that contained attribute and emphasize them.  
+  By default, we sort vendors with attribute of **Non-Compliance** and products with **Gap**.
+
+- **Search**
+
+  Next to sort menu, we implement a search input enabling you to quick search from vendors or products.
