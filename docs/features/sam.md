@@ -19,7 +19,7 @@ In AM Browser you will find a simplified module that displays the SAM status das
 ## Product
 
 - All products of a vendor are listed in cards.
-- Sorting by **License**, **Consumption**, **Surplus** or **Gap** is supported. (**Gap** by default)
+- Sorting by **Non-Compliance** or **Over-Compliance** is supported (**Non-Compliance** by default).
 - Sorted items are colored in cards.
 - You can click the card to switch to the version page.
 
