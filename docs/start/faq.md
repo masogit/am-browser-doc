@@ -1,11 +1,11 @@
 ## AM Browser FAQ
 
-- How does the access control work?
+- How does access control work?
 
-    For the access control of UI functionalities, two groups of users are supported:
+    For the access control of UI functionalities, users are divided into two groups:
     - Admin, those who have the administrator role set in AM (can be found in `Employee and departments`->`Profile` tab -> `Administration rights` ) can access all UI functionalities.
     - Non-admin, can only access `Search`, `Insight` and `Viewer`.
-    The data access control permission has the same configuration as `User Rights`, which is based on the operations against each table. (Log on to the AM client as an administrator, menu `Administration`-> `Rights` -> `User rights`)
+    The data access control permission has the same configuration as the `User Rights`, which is based on the operations against each table. (Log on to the AM client as an administrator, menu `Administration`-> `Rights` -> `User rights`)
 
 - Do customers need guest licenses to access AM Browser ?
 
@@ -17,7 +17,7 @@
 
 - Can AMB co-exist with AM Web ?
 
-    Yes, AMB is a stand-alone module than AM Web.
+    Yes, AMB is a stand-alone module.
 
 - How to restart AMB ?
 
