@@ -4,21 +4,25 @@ In AM Browser you will find a simplified module that displays the SAM status das
 
 >  *Effective License Positioning (Vendor)* > *Product* > *Version* > *Computer*
 
+>  *To note: **Non-Compliance** means the license consumption of the product/version is greater than the gained license right points. **Over-Compliance** means the license consumption of the product/version is smaller than the gained license right points.
+
 ## Effective License Positioning
 
-- All software vendors are listed in cards.
+- Those software vendors which have software installed or license gained are listed in cards.
 - Sorting by **Non-Compliance** or **Over-Compliance** is supported (**Non-Compliance** by default).
 - Sorted items are colored in cards.
 - You can click the card to switch to the product page.
 
 >   *To note:  if the value of sorting items is zero, we ignore painting them.*
 
+>   *To note:  As a product may contain multiple versions, only when there are at least one version is **Over-Compliance** and no any version is **Non-Compliance**, the product is **Over-Compliance**.
+
 
 ![SAM screen shot](img/sam1.png)
 
 ## Product
 
-- All products of a vendor are listed in cards.
+- The software products of a vendor which have software installed or license purchased are listed in cards.
 - Sorting by **Non-Compliance** or **Over-Compliance** is supported (**Non-Compliance** by default).
 - Sorted items are colored in cards.
 - You can click the card to switch to the version page.
@@ -27,7 +31,7 @@ In AM Browser you will find a simplified module that displays the SAM status das
 
 ## Version
 
-- All versions of a product are displayed in table mode.
+- The versions of a product which have the version of software installed or corresponding license purchased are displayed in table mode.
 - You can click a record to review the computers where this version of the software is installed.
 
 ![SAM screen shot](img/sam3.png)
