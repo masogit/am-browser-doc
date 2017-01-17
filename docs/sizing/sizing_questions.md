@@ -1,5 +1,5 @@
-# Asset Manager Sizing Questions
-The following list of questions is designed to gather the information that is required to make recommendations about the overall system architecture that you need for your Asset Manager environment.   
+# Sizing Questions
+The following list of questions is designed to gather the information that is required to make recommendations about the overall system architecture that you need for your Asset Manager Browser environment.   
 
 >Note: Although not all of the information requested here is required to size the environment, it is useful information to obtain for a thorough architecture recommendation. 
 
@@ -51,7 +51,7 @@ The following list of questions is designed to gather the information that is re
 	3.	An external reporting solution
 	4.	Data replication into a data warehouse
 15.	Which browser are you using?
-16.	Do you use Citrix in your network
+16.	Do you use Citrix in your network?
 
 
 > Note: Use the calculation in the "Rules of thumb" section to estimate the ratio of Self Service users to concurrent users. 

@@ -1,5 +1,5 @@
-# Rules of thumb
-(All the web related application servers in this section, if not mentioned, are of 64-bit.)
+# Rule of thumb
+Note: All the web related application servers in this section, if not mentioned, are of 64-bit.
 ## Asset Manager Browser
 Asset Manager Browser is built on an embedded NodeJS server, which is more efficient than the conventional Asset Manager components.
 

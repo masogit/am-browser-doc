@@ -1,4 +1,4 @@
-# Asset Manager Deployment models
+# Deployment models
 
 
 ### Standalone mode
@@ -24,7 +24,7 @@ The Asset Manager horizontal scaling model comprises multiple Asset Manager Web 
 A horizontal scaling implementation is typically used in large environments in which system scalability and resilience are concerned. A horizontal scaling implementation can support as many client connections as the sum of the individual Asset Manager instances can support. For example, if each instance can support 250 client connections and there are 4 instances, the system can support 1000 client connections. A horizontal scaling implementation has improved resilience features, such as the ability to stop and start the load balancer process without causing a total system outage and the ability to add a new servlet container process to a virtual group when the system is running.
 <br/>
 <br/>
-### Sample Asset Manager deployment diagram:
+### Typical Asset Manager deployment diagram:
 
 
 ![All_in_one](../img/sizing/AM_9.6.0_AIO_cl4.png)
@@ -55,7 +55,7 @@ In this diagram, the following events occur:
 
 <br/>
 
-# Asset Manager Browser Server and Rest Server
+# Asset Manager Browser Server and REST Server
 **Minimum required reference configurations**
 
 

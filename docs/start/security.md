@@ -106,7 +106,7 @@ Data integrity is a critical security requirement. The data backup procedure is 
 For more details, refer to the AM High Availability Guidelines in the installation media.
 
 ## Encryption
-This chapter provides information on data encryption in AM Browser.
+This section provides information on data encryption in AM Browser.
 
 ###TLS/SSL Data Transmission
 
