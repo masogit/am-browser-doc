@@ -17,7 +17,7 @@ AM Browser has the following two services.
 - AM Browser Service that provides user interface.
 - AM REST Service that provides AM fundamental data service.
 
-> Please make sure you always use the REST Service shipped with AM Browser to get the best compatibility.
+> Make sure you always use the REST Service shipped with AM Browser to get the best compatibility.
 
 ## Deployment
 
@@ -26,7 +26,7 @@ It is recommended that AM Browser connects to a **Standby RDBMS**.
 ![Deploy diagram](img/AMB_1.0_Standalone.png)
 
 
-## Installation of AM REST Service for the first time
+## Install AM REST Service for the first time
 
 > **If your OS is `Windows Server 2008 R2`, please run the `.bat` or `.cmd` files in command line to make sure they can be executed properly.** 
 
@@ -69,7 +69,7 @@ It is recommended that AM Browser connects to a **Standby RDBMS**.
     Run `4_startRestService.bat` to start the service and `5_stopRestService.bat` to stop the service.
 
 
-## Installation of AM Browser Service for the first time
+## Install AM Browser Service for the first time
 
 1. Unzip files. Unzip `am-browser-1.0.zip` to a folder, for example, am-browser.
 1. Configure the server settings. Duplicate the `am-browser-config.properties.default` file and rename the copy as `am-browser-config.properties`.
