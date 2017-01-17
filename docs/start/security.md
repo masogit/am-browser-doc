@@ -1,5 +1,4 @@
-## Introduction
-This guide is intended for system engineers and administrators who need to securely implement the AM Browser in their environment.
+This section is intended for system engineers and administrators who need to securely implement the AM Browser in their environment.
 
 ## Secure Implementation and Deployment
 
@@ -25,7 +24,7 @@ AM Browser supports the use of proxy servers that require authentication. AM Bro
 
 
 ##	Network and Communication Security
-This chapter provides information about network and communication security.
+This section provides information about network and communication security.
 ### Secure Topology
 AM Browser is designed to be part of a secure architecture, and can meet the challenge of dealing with the security threats to which it could potentially be exposed.
 Several measures are recommended to securely deploy AM Browser:
