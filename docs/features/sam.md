@@ -15,7 +15,7 @@ In AM Browser you will find a simplified module that displays the SAM status das
 
 >   *To note:  if the value of sorting items is zero, we ignore painting them.*
 
->   *To note:  As a product may contain multiple versions, only when there are at least one version is **Over-Compliance** and no any version is **Non-Compliance**, the product is **Over-Compliance**.
+>   *To note:  As a product may contain multiple versions, only when there are at least one version is* **Over-Compliance** *and no any version is* **Non-Compliance***, the product is* **Over-Compliance**.
 
 
 ![SAM screen shot](img/sam1.png)
