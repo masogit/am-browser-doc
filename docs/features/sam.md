@@ -4,7 +4,7 @@ In AM Browser you will find a simplified module that displays the SAM status das
 
 >  *Effective License Positioning (Vendor)* > *Product* > *Version* > *Computer*
 
->  *To note: **Non-Compliance** means the license consumption of the product/version is greater than the gained license right points. **Over-Compliance** means the license consumption of the product/version is smaller than the gained license right points.
+**Non-Compliance** means the license consumption of the product/version is greater than the gained license right points. **Over-Compliance** means the license consumption of the product/version is smaller than the gained license right points.
 
 ## Effective License Positioning
 
