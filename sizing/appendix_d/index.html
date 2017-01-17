@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Appendix D - Database volume size of sample deployment - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Install <i class="icon icon-link"></i>
+              
+            
+              
+                Sizing Guide <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Appendix D - Database volume size of sample deployment
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../../start/issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="Appendix D - Database volume size of sample deployment" href="./">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Database volume size" href="#database-volume-size">
+                Database volume size
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../../features/adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../../start/lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../../features/builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../../features/builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../../features/builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../../features/search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../../features/insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../../features/viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../../features/sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../../features/myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../../features/adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="appendix-d-database-volume-size-of-sample-deployment">Appendix D: Database volume size of sample deployment</h1>
+<h3 id="database-volume-size">Database volume size</h3>
+<p>The following table shows the disk usage of data sets on Oracle database.</p>
+<ul>
+<li>All the databases use the default character set. Converting to UTF may add more disk usage.</li>
+<li>Disk usage may vary as per the usage on various set of customer data.</li>
+<li>
+<p>Disk usage for supporting usage, such as temporary space and database system level disk usage, are not included.</p>
+<table>
+<thead>
+<tr>
+<th>Database Type</th>
+<th>Data Set</th>
+<th>Disk Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oracle 11g2</td>
+<td>Simulated data set, check below table for details</td>
+<td>8.2 GB</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Detailed data information (tables with more than 200K rows are listed)</p>
+<table>
+<thead>
+<tr>
+<th>Table Name</th>
+<th>Size</th>
+<th>Record Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMHISTORY</td>
+<td>870 MB</td>
+<td>10M rows</td>
+</tr>
+<tr>
+<td>AMSOFTINSTALL</td>
+<td>174 MB</td>
+<td>1M rows</td>
+</tr>
+<tr>
+<td>AMCOMMENT</td>
+<td>993 MB</td>
+<td>800K rows</td>
+</tr>
+<tr>
+<td>AMASSET</td>
+<td>378 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMPORTFOLIO</td>
+<td>198 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMCLEASEDETAIL</td>
+<td>194 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMCOMPUTER</td>
+<td>181 MB</td>
+<td>600K rows</td>
+</tr>
+<tr>
+<td>AMCLEASEDTLDESC</td>
+<td>39  MB</td>
+<td>600K rows</td>
+</tr>
+<tr>
+<td>AMPORDLINE</td>
+<td>138 MB</td>
+<td>500K rows</td>
+</tr>
+<tr>
+<td>AMEMPLDEPT</td>
+<td>142 MB</td>
+<td>400K rows</td>
+</tr>
+<tr>
+<td>AMASTCNTRDESC</td>
+<td>13  MB</td>
+<td>300K rows</td>
+</tr>
+<tr>
+<td>AMWFINSTANCE</td>
+<td>21  MB</td>
+<td>300K rows</td>
+</tr>
+<tr>
+<td>AMINVENTMODEL</td>
+<td>37  MB</td>
+<td>200K rows</td>
+</tr>
+<tr>
+<td>AMPORDER</td>
+<td>53  MB</td>
+<td>200K rows</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../appendix_c/" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../appendix_e/" title="Appendix E - Links">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Appendix E - Links
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>

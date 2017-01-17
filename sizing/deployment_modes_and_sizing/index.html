@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Deployment Modes and Sizing - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Install <i class="icon icon-link"></i>
+              
+            
+              
+                Sizing Guide <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Deployment Modes and Sizing
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../../start/issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="Deployment Modes and Sizing" href="./">
+      Deployment Modes and Sizing
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Standalone mode" href="#standalone-mode">
+                Standalone mode
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Vertical scaling mode" href="#vertical-scaling-mode">
+                Vertical scaling mode
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Horizontal scaling mode" href="#horizontal-scaling-mode">
+                Horizontal scaling mode
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Sample Asset Manager deployment diagram:" href="#sample-asset-manager-deployment-diagram">
+                Sample Asset Manager deployment diagram:
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../../features/adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../../start/lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../../features/builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../../features/builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../../features/builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../../features/search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../../features/insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../../features/viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../../features/sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../../features/myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../../features/adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="asset-manager-deployment-models">Asset Manager Deployment models</h1>
+<h3 id="standalone-mode">Standalone mode</h3>
+<p>The Asset Manager standalone model comprises only one Asset Manager Browser Server connecting with one Asset Manager REST Service. This is the simplest deployment model; you may consider it the base model.</p>
+<p><img alt="Standalone" src="../../img/sizing/AMB_1.1_Standalone.png" /></p>
+<p><br/></p>
+<h3 id="vertical-scaling-mode">Vertical scaling mode</h3>
+<p>The Asset Manager vertical scaling model comprises multiple Asset Manager REST Services and multiple Asset Manager Browser Servers. Each REST Service sits in a single Tomcat instance. This implementation is typically used in small to medium-sized environments where hardware system resources are limited. This implementation does not have a limit to the number of client connections, as long as the Asset Manager Web Server has available system resources.</p>
+<p><img alt="Vertical" src="../../img/sizing/AMB_1.1_Vertical.png" /></p>
+<p><br/></p>
+<h3 id="horizontal-scaling-mode">Horizontal scaling mode</h3>
+<p>The Asset Manager horizontal scaling model comprises multiple Asset Manager Web Services and multiple Asset Manager Web Tiers. Each Web Tier/Web Service sits in a single Tomcat instance. And the Tomcat instances are running on multiple servers.  </p>
+<p><img alt="Horizontal" src="../../img/sizing/AMB_1.1_Horizontal.png" /></p>
+<p>A horizontal scaling implementation is typically used in large environments in which system scalability and resilience are concerned. A horizontal scaling implementation can support as many client connections as the sum of the individual Asset Manager instances can support. For example, if each instance can support 250 client connections and there are 4 instances, the system can support 1000 client connections. A horizontal scaling implementation has improved resilience features, such as the ability to stop and start the load balancer process without causing a total system outage and the ability to add a new servlet container process to a virtual group when the system is running.
+<br/>
+<br/></p>
+<h3 id="sample-asset-manager-deployment-diagram">Sample Asset Manager deployment diagram:</h3>
+<p><img alt="All_in_one" src="../../img/sizing/AM_9.6.0_AIO_cl4.png" /></p>
+<p>In this diagram, the following events occur:</p>
+<p><img alt="purple" src="../../img/sizing/purple_rect.png" /></p>
+<ul>
+<li>The Web browser connects to the Asset Manager Web Tier server. The Web Tier server connects to the Web Services server. Notice that some customized end-user applications can connect directly to the Web Services server.</li>
+<li>The Asset Manager Web Tier and Web Services logical servers can be installed on the same physical server or on different servers. There can be one or multiple instances of each Web Tier and Web Services logical server.</li>
+<li>The Asset Manager Web Tier can connect to a Record Search server to enable the ability of record searching.</li>
+</ul>
+<p><img alt="green" src="../../img/sizing/green_rect.png" /></p>
+<ul>
+<li>The Web browser connects to the Asset Manager Browser server. The Asset Manager Browser server connects to the Asset Manager RESTful (Rest) servers.</li>
+<li>The Asset Manager RESTful logical servers can be installed on the same physical server or on different servers. There can be one or multiple instances of each RESTful logical server.</li>
+<li>It is recommended to connect Asset Manager Browser server to a standby RDBMS to reduce the production load. However, if there is only a few users using this component, Asset Manager Browser can directly connect to the primary RDBMS.</li>
+</ul>
+<p><img alt="orange" src="../../img/sizing/orange_rect.png" /></p>
+<ul>
+<li>The Asset Manager Windows client (GUI) connects directly to the RDBMS server.</li>
+</ul>
+<p><img alt="dark_green" src="../../img/sizing/dark_green_rect.png" /></p>
+<ul>
+<li>The Asset Manager Automated Process Manager (amsrv, aka: APM Server) connects directly to the RDBMS server. There is no direct connection between the Asset Manager Windows GUI or Web Client and the Asset Manager Automated Process Manager.</li>
+</ul>
+<p><br/></p>
+<h1 id="asset-manager-browser-server-and-rest-server">Asset Manager Browser Server and Rest Server</h1>
+<p><strong>Minimum required reference configurations</strong></p>
+<table>
+<thead>
+<tr>
+<th>All in one (0 - 100 concurrent users)</th>
+<th>Windows and Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All in one Server</td>
+<td>HPE DL360 - 16 CPU cores, 32GB RAM, 4 x 146GB RAID 10</td>
+</tr>
+</tbody>
+</table>
+<p><em>For all-in-one deployment, we recommend that small customers (that is, customers that have fewer than 100 concurrent users) use a small environment deployment in a Windows environment. In a small environment deployment, the following products can be deployed on a single machine: Web Service, Web Tier and the database.</em></p>
+<table>
+<thead>
+<tr>
+<th>Small (100-250 concurrent users)</th>
+<th>Windows and Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM Browser and Rest Server</td>
+<td>HPE BL460c – 6 CPU cores, 16GB RAM, 70GB HD</td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>HPE DL585 – 6 CPU cores, 16GB RAM, 4 ~ 6 x 146GB RAID 10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Medium (250 - 500 concurrent users)</th>
+<th>Windows and Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM Browser and Rest Server</td>
+<td>HPE BL460c – 12 CPU cores, 24GB RAM, 120GB HD</td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>HPE DL585 –12 CPU cores, 24GB RAM, 6~8 x 146GB RAID 10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Large (500 - 1,000 concurrent users)</th>
+<th>Windows and Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM Browser and Rest Server</td>
+<td>HPE BL460c - 24 CPU cores, 32GB RAM, 120GB HD</td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>HPE DL585 - 24 CPU cores, 32GB RAM, 8 x 300GB RAID 10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Very Large (more than 1,000 concurrent users)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>At this size, we recommend that you run Asset Manager on multiple machines in vertical or horizontal scaling mode.</em></p>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../sizing_questions/" title="Sizing Questions">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Sizing Questions
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../rule_of_thumb/" title="Rules of thumb">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Rules of thumb
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>

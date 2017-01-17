@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Installation - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Install <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Installation
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="Installation" href="./">
+      Installation
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Prerequisite" href="#prerequisite">
+                Prerequisite
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Services" href="#services">
+                Services
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Deployment" href="#deployment">
+                Deployment
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Installation of AM REST Service for the first time" href="#installation-of-am-rest-service-for-the-first-time">
+                Installation of AM REST Service for the first time
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Installation of AM Browser Service for the first time" href="#installation-of-am-browser-service-for-the-first-time">
+                Installation of AM Browser Service for the first time
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../../sizing/introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../../sizing/sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../../sizing/deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../../sizing/rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../../sizing/appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../../sizing/appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../../sizing/appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../../sizing/appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../../sizing/appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../../features/adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../../features/builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../../features/builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../../features/builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../../features/search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../../features/insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../../features/viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../../features/sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../../features/myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../../features/adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="am-browser-installation">AM Browser installation</h1>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>AM Browser functions on top of Asset Manager 9.5x and 9.60. Before the installation, make sure that your AM Browser server complies with the specifications in AM 9.5x and AM 9.60 support matrices.</p>
+<p>For Asset Manager 9.60 Support Matrix, see <a href="https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM02417964">https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM02417964</a>.</p>
+<p>For Asset Manager 9.5x Support Matrix, see <a href="https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310">https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310</a>.</p>
+<blockquote>
+<p>AM Browser packages are self-contained. It does not require any other AM components during installation. What you need is only the AM database and a well configured database connection that can be used by AM.</p>
+</blockquote>
+<h2 id="services">Services</h2>
+<p>AM Browser has the following two services.</p>
+<ul>
+<li>AM Browser Service that provides user interface.</li>
+<li>AM REST Service that provides AM fundamental data service.</li>
+</ul>
+<blockquote>
+<p>Please make sure you always use the REST Service shipped with AM Browser to get the best compatibility.</p>
+</blockquote>
+<h2 id="deployment">Deployment</h2>
+<p>It is recommended that AM Browser connects to a <strong>Standby RDBMS</strong>.</p>
+<p><img alt="Deploy diagram" src="../img/AMB_1.0_Standalone.png" /></p>
+<h2 id="installation-of-am-rest-service-for-the-first-time">Installation of AM REST Service for the first time</h2>
+<blockquote>
+<p><strong>If your OS is <code>Windows Server 2008 R2</code>, please run the <code>.bat</code> or <code>.cmd</code> files in command line to make sure they can be executed properly.</strong> </p>
+</blockquote>
+<ol>
+<li>
+<p>Preparation.</p>
+<p>We recommend that you install AM REST Service on a server that has either AM Windows Client or AM Web Service installed and can connect to the AM database, the configuration of ODBC (64-bit) can be reused to install the REST Service.</p>
+<p>Otherwise, you need to create an ODBC (64-bit) DSN. To do this, go to the <code>am-browser-rest\bin</code> folder, run <code>2_registerODBCService.bat</code> and follow the guide to register SQLSERVER ODBC Data Source Name.</p>
+</li>
+<li>
+<p>Unzip files.</p>
+<p>Unzip <code>am-browser-rest-1.0.zip</code> to a folder, for example, am-browser-rest.</p>
+</li>
+<li>
+<p>Configure the server settings.</p>
+<p>Go to the am-browser-rest\websvc folder, duplicate the <code>package.properties.default</code> file and rename the copy as <code>package.properties</code>. In the <code>package.properties</code>:</p>
+<ul>
+<li>DB connection. Make sure the database information such as <code>DB.datasource</code>, <code>DB.login</code> and <code>DB.password</code> is set correctly. Tip: You can refer to AM web service server’s package.properties file as it uses the same settings.</li>
+<li>UCMDB connection. Make sure <code>PushAdapter.Monitor.Enabled</code>, <code>UCMDB.Server.Host</code>, <code>UCMDB.Server.Port</code>, <code>UCMDB.Server.User</code> and <code>UCMDB.Server.Password</code> are set correctly.</li>
+<li>Server port. If 10081, the default port of the REST Service, is occupied, modify am-browser-rest\apache-tomcat-<version>\conf\server.xml to set another port.</li>
+</ul>
+</li>
+<li>
+<p>Generate key files.</p>
+<ul>
+<li>If the server instance is for temporary trial only, you can skip this step and it will use the default files.</li>
+<li>Generate a new key. Go to am-browser-rest\bin folder, run <code>0_generatePassword.bat</code> with the administrator right.</li>
+<li>Reuse the existing key files. If there are secret-share files, make sure the parameter <code>PBKDF2.Password.First.File</code> and <code>PBKDF2.Password.Second.File</code> in package.properties are set correctly and skip the key file generation.</li>
+</ul>
+</li>
+<li>
+<p>Deploy the .war file to Tomcat.</p>
+<p>Go to the am-browser-rest\bin folder, run <code>1_deployRestServer.bat</code> with the administrator right and follow the instructions.</p>
+</li>
+<li>
+<p>Windows service registration</p>
+<ul>
+<li>Register: Go to the am-browser-rest\bin folder, run <code>3_registerRestService.bat</code> with the administrator right, a service named <code>HPE am-browser-rest-service</code> is created.</li>
+<li>Unregister: Go to the bin folder, run <code>6_unregisterRestService.bat</code> with the administrator right.</li>
+</ul>
+</li>
+<li>
+<p>Start/Stop the REST Service.</p>
+<p>Run <code>4_startRestService.bat</code> to start the service and <code>5_stopRestService.bat</code> to stop the service.</p>
+</li>
+</ol>
+<h2 id="installation-of-am-browser-service-for-the-first-time">Installation of AM Browser Service for the first time</h2>
+<ol>
+<li>Unzip files. Unzip <code>am-browser-1.0.zip</code> to a folder, for example, am-browser.</li>
+<li>
+<p>Configure the server settings. Duplicate the <code>am-browser-config.properties.default</code> file and rename the copy as <code>am-browser-config.properties</code>.
+In the <code>am-browser-config.properties</code> file, make sure the port (<code>8080</code> by default) is set correctly and not occupied by other running processes.
+Please refer to <a href="../configuration">Configuration Chapter</a> for details.</p>
+</li>
+<li>
+<p>Windows service registration</p>
+<ul>
+<li>Register: Run <code>0_registerService.bat</code> with the administrator right, and a service named <code>HPE am-browser-service</code> is created.</li>
+<li>Unregister service. Run <code>3_unregisterService.bat</code> with the administrator right to unregister the service.</li>
+</ul>
+</li>
+<li>Start/Stop<ul>
+<li>Start AM Browser Service. Run <code>1_startService.bat</code> with the administrator right to start the service.</li>
+<li>Stop AM Browser Service. Run <code>2_stopService.bat</code> with the administrator right to stop the service.</li>
+</ul>
+</li>
+</ol>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../issues/" title="Known issues">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Known issues
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../security/" title="Security">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Security
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>

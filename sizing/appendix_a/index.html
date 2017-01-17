@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Appendix A - Asset Manager Browser benchmark performance test results - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Install <i class="icon icon-link"></i>
+              
+            
+              
+                Sizing Guide <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Appendix A - Asset Manager Browser benchmark performance test results
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../../start/issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="Appendix A - Asset Manager Browser benchmark performance test results" href="./">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Asset Manager Browser benchmark sample performance (2,000 users) test results" href="#asset-manager-browser-benchmark-sample-performance-2000-users-test-results">
+                Asset Manager Browser benchmark sample performance (2,000 users) test results
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Deployment diagram" href="#deployment-diagram">
+                Deployment diagram
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Hardware" href="#hardware">
+                Hardware
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Software" href="#software">
+                Software
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Setup and Tuning" href="#setup-and-tuning">
+                Setup and Tuning
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Test Data" href="#test-data">
+                Test Data
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Load Test Scenario Setting" href="#load-test-scenario-setting">
+                Load Test Scenario Setting
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Test statistics for 2,000 concurrent user tests" href="#test-statistics-for-2000-concurrent-user-tests">
+                Test statistics for 2,000 concurrent user tests
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Performance testing results" href="#performance-testing-results">
+                Performance testing results
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../../features/adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../../start/lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../../features/builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../../features/builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../../features/builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../../features/search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../../features/insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../../features/viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../../features/sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../../features/myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../../features/adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="appendix-a-asset-manager-browser-benchmark-sample-performance-2000-users-test-results">Appendix A - Asset Manager Browser benchmark sample performance (2,000 users) test results</h1>
+<h3 id="asset-manager-browser-benchmark-sample-performance-2000-users-test-results">Asset Manager Browser benchmark sample performance (2,000 users) test results</h3>
+<p>The goal of the benchmark test is to determine the system performance with 2,000 concurrent users.</p>
+<h3 id="deployment-diagram">Deployment diagram</h3>
+<p>For 2,000 concurrent users, the test environment contains 8 Asset Manager REST Service servers and 4 Asset Manager Browser servers on 4 machines (with 2 Asset Manager Rest Service and 1 Asset Manager Browser on each machine), two load balancer machines and one database machine.
+Central database for Asset Manager Browser is deployed with Oracle database.</p>
+<p><img alt="AMB_Benchmark" src="../../img/sizing/AMB_1.1_2000_BM.png" /></p>
+<h3 id="hardware">Hardware</h3>
+<p>Performance tests are executed on virtual machines except the database.
+The following table shows the configurations of servers for the 2,000 user benchmark test.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Usage</th>
+<th>Type</th>
+<th>Operation system</th>
+<th>CPU</th>
+<th>Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>AM Rest Server</td>
+<td>Virtual Machine</td>
+<td>Windows 2012 R2</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 8 Cores</td>
+<td>16 GB</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AM Rest Server</td>
+<td>Virtual Machine</td>
+<td>Windows 2012 R2</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 8 Cores</td>
+<td>16 GB</td>
+</tr>
+<tr>
+<td>3</td>
+<td>AM Rest Server</td>
+<td>Virtual Machine</td>
+<td>Windows 2012 R2</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 8 Cores</td>
+<td>16 GB</td>
+</tr>
+<tr>
+<td>4</td>
+<td>AM Rest Server</td>
+<td>Virtual Machine</td>
+<td>Windows 2012 R2</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 8 Cores</td>
+<td>16 GB</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Load Balancer</td>
+<td>Virtual Machine</td>
+<td>Cent OS 7.0</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 2 Cores</td>
+<td>4 GB</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Load Balancer</td>
+<td>Virtual Machine</td>
+<td>Cent OS 7.0</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 2 Cores</td>
+<td>4 GB</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Database</td>
+<td>Physical Server</td>
+<td>Oracle Linux 7</td>
+<td>Intel E5 2680 v3@ 2.50 GHz x 48 Cores</td>
+<td>64 GB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="software">Software</h3>
+<p>All tests were run on the following software set:</p>
+<ul>
+<li>HPE Load Runner 11.52.0.0</li>
+<li>Apache Tomcat 8.0.36 64 bit</li>
+<li>Tengine/2.1.2 (nginx/1.6.2)</li>
+<li>JDK 1.8.0_54 64-bit</li>
+<li>Asset Manager 9.61 Release Build</li>
+<li>Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 64 bit Production</li>
+</ul>
+<h3 id="setup-and-tuning">Setup and Tuning</h3>
+<p>Tuning made before test:</p>
+<p>See "<a href="../appendix_c/">appendix</a>" for more details.</p>
+<h3 id="test-data">Test Data</h3>
+<p>Test data includes:</p>
+<table>
+<thead>
+<tr>
+<th>Table Name</th>
+<th>Size</th>
+<th>Record Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMHISTORY</td>
+<td>870 MB</td>
+<td>10M rows</td>
+</tr>
+<tr>
+<td>AMSOFTINSTALL</td>
+<td>174 MB</td>
+<td>1M rows</td>
+</tr>
+<tr>
+<td>AMCOMMENT</td>
+<td>993 MB</td>
+<td>800K rows</td>
+</tr>
+<tr>
+<td>AMASSET</td>
+<td>378 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMPORTFOLIO</td>
+<td>198 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMCLEASEDETAIL</td>
+<td>194 MB</td>
+<td>700K rows</td>
+</tr>
+<tr>
+<td>AMCOMPUTER</td>
+<td>181 MB</td>
+<td>600K rows</td>
+</tr>
+<tr>
+<td>AMCLEASEDTLDESC</td>
+<td>39  MB</td>
+<td>600K rows</td>
+</tr>
+<tr>
+<td>AMPORDLINE</td>
+<td>138 MB</td>
+<td>500K rows</td>
+</tr>
+<tr>
+<td>AMEMPLDEPT</td>
+<td>142 MB</td>
+<td>400K rows</td>
+</tr>
+<tr>
+<td>AMASTCNTRDESC</td>
+<td>13  MB</td>
+<td>300K rows</td>
+</tr>
+<tr>
+<td>AMWFINSTANCE</td>
+<td>21  MB</td>
+<td>300K rows</td>
+</tr>
+<tr>
+<td>AMINVENTMODEL</td>
+<td>37  MB</td>
+<td>200K rows</td>
+</tr>
+<tr>
+<td>AMPORDER</td>
+<td>53  MB</td>
+<td>200K rows</td>
+</tr>
+</tbody>
+</table>
+<h3 id="load-test-scenario-setting">Load Test Scenario Setting</h3>
+<ul>
+<li>Test was executed for more than 80 minutes.</li>
+<li>
+<p>Detailed scenario setting:</p>
+<table>
+<thead>
+<tr>
+<th>User Scenario</th>
+<th>User Count</th>
+<th>Peak   Duration</th>
+<th>Start Time</th>
+<th>Think   Time</th>
+<th>Ramp-up Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM Browser View</td>
+<td>2000</td>
+<td>40 min</td>
+<td>+0:00:00</td>
+<td>25 ~ 35s, random</td>
+<td>24 users every 15 seconds (shared with all scenario)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="test-statistics-for-2000-concurrent-user-tests">Test statistics for 2,000 concurrent user tests</h3>
+<ul>
+<li>
+<p>Maximum running Vusers:  2,000
+    <img alt="Running_Users" src="../../img/sizing/2ku_Running_Users.png" /></p>
+</li>
+<li>
+<p>Average Hit Per Second: 117.509</p>
+</li>
+<li>
+<p>Maximum: 160</p>
+<p><img alt="Hit_Per_Second" src="../../img/sizing/2ku_HPS.png" /></p>
+</li>
+</ul>
+<h3 id="performance-testing-results">Performance testing results</h3>
+<p><strong>Summary test result:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>AM Breowser 1.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum Running Vusers:</td>
+<td>2,000</td>
+</tr>
+<tr>
+<td>Average Throughput   (bytes/second):</td>
+<td>4,079,885</td>
+</tr>
+<tr>
+<td>Average Hits per Second:</td>
+<td>117.509</td>
+</tr>
+<tr>
+<td>No. of View Transaction processed</td>
+<td>12,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Response Time:</strong></p>
+<p>All the average response time are under 2 seconds.</p>
+<p><img alt="KeyResponseTime" src="../../img/sizing/2ku_ResponseTime_Graph.png" /></p>
+<p><strong>Detailed test results: </strong></p>
+<table>
+<thead>
+<tr>
+<th>Transaction Name</th>
+<th>Average</th>
+<th>90 Percent</th>
+<th>Pass</th>
+<th>Fail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action_Transaction</td>
+<td>6.738</td>
+<td>7.648</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T00_Load_Login_Page</td>
+<td>0.359</td>
+<td>0.399</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T01_Login</td>
+<td>0.267</td>
+<td>0.332</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T02_Search</td>
+<td>1.136</td>
+<td>1.477</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T03_Insight</td>
+<td>0.041</td>
+<td>0.053</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_01_Asset_01_Nature</td>
+<td>0.138</td>
+<td>0.174</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_01_Asset_02_Brands</td>
+<td>0.048</td>
+<td>0.062</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_01_Asset_03_Servers</td>
+<td>1.258</td>
+<td>1.328</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_01_Asset_04_Request</td>
+<td>0.131</td>
+<td>0.168</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_02_Finance_01_Invoice</td>
+<td>0.131</td>
+<td>0.168</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_02_Finance_02_Contracts_01</td>
+<td>0.151</td>
+<td>0.188</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_02_Finance_02_Contracts_02_Maintenance</td>
+<td>0.05</td>
+<td>0.062</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_02_Finance_02_Contracts_03_Detail</td>
+<td>0.038</td>
+<td>0.048</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_03_Test_01_Portfolio_with_ExpenseLines</td>
+<td>0.048</td>
+<td>0.059</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_03_Test_02_Request</td>
+<td>0.129</td>
+<td>0.167</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_03_Test_03_POrder</td>
+<td>1.628</td>
+<td>1.75</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_03_Test_04_ExpenseLine</td>
+<td>0.13</td>
+<td>0.166</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_03_Test_05_UCMDB_Asset</td>
+<td>0.044</td>
+<td>0.057</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_04_SAM_01_Software_Product</td>
+<td>0.141</td>
+<td>0.181</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_04_SAM_02_SoftInstall</td>
+<td>0.686</td>
+<td>0.751</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T04_Viewer_04_SAM_03_SoftModel</td>
+<td>0.143</td>
+<td>0.182</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T09_Logout</td>
+<td>0.013</td>
+<td>0.015</td>
+<td>12,000</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="conclusion">Conclusion</h4>
+<p>Asset Manager Browser performed acceptably during testing and demonstrated good scalability.</p>
+<p>All of the response time goals, up to the maximum tested concurrent user level of 2,000 users, were met.
+Additionally, there was a significant margin for increased workload.</p>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../rule_of_thumb/" title="Rules of thumb">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Rules of thumb
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../appendix_b/" title="Appendix B - Asset Manager Browser processing capability test results">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Appendix B - Asset Manager Browser processing capability test results
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>

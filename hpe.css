@@ -1,0 +1,65 @@
+/* flatly */
+.navbar-default {
+    background-color: #425563;
+    border-color: #425563;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #d7e0e2;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.bs-sidebar a {
+    color: #425563;
+}
+
+a {
+    color: #2AD2C9;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #2AD2C9;
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #2AD2C9;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #2AD2C9;
+    background-color: transparent;
+}
+
+code {
+    background: transparent;
+    border: 0 none;
+    color: #900;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: auto; 
+    }
+    .nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* readthedocs*/
+.wy-side-nav-search {
+    background-color: #01A982;
+}
+
+.wy-nav-top {
+    background: #01A982;
+}

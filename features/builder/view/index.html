@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>View - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../../hpe.css">
+    
+    <script src="../../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Administer <i class="icon icon-link"></i>
+              
+            
+              
+                Builder <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        View
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../../../start/issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../../../sizing/introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../../../sizing/sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../../../sizing/deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../../../sizing/rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../../../sizing/appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../../../sizing/appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../../../sizing/appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../../../sizing/appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../../../sizing/appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../../adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../../../start/lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="View" href="./">
+      View
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Fields and Links" href="#fields-and-links">
+                Fields and Links
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Functions" href="#functions">
+                Functions
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Others" href="#others">
+                Others
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../../search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../../insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../../viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../../sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../../myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../../adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="am-browser-view-builder">AM Browser View Builder</h1>
+<p>AMB View is a lightweight component that presents AM data, Admin users may create and manage views in AMB Builder. Power users can query all views in AMB Viewer. Guests can access a view a URL that is shared by Admin users.</p>
+<p>A view is created from AM schema (raw table), and a view only has one root table. All fields or links are related to the root table.  </p>
+<h2 id="fields-and-links">Fields and Links</h2>
+<p>Fields and links are selected from AMB Build Schema. When a root table is selected, it cannot be changed. Fields and links are split into 3 groups:</p>
+<ul>
+<li>1-M Links</li>
+<li>1-1 Links</li>
+<li>Fields</li>
+</ul>
+<p>All fields or 1-1 link's fields will be added in the same link. When data is being queried from this view, these fields are queried and displayed together. For example:</p>
+<pre><code>Root table:
+        amComputer
+Fields:
+        CPUType
+        Portfolio.seAssignment
+        Portfolio.Model.Name
+        Portfolio.Brand.Name
+</code></pre>
+
+<p>When fields in 1-M Links are selected, a new link is created. For example:</p>
+<pre><code>1-M link:
+        PhysicalDrivers
+Field:
+        lTotalSizeMb
+</code></pre>
+
+<pre><code>1-M link:
+        Portfolio.Softs
+Field:
+        Folder
+        Model.Name
+        Model.Brand.Name
+</code></pre>
+
+<h2 id="functions">Functions</h2>
+<p>The following functions take effect in each link (Root or 1-M link).</p>
+<ul>
+<li>
+<p>Searchable</p>
+<ul>
+<li>Only 2 fields in a link can be set to "searchable".</li>
+<li>Press Enter in the viewer search box, it will generate AQL filters to query data on this field.</li>
+<li>The searchable fields of the root table can be searched in Global Search.</li>
+</ul>
+</li>
+<li>
+<p>Group by</p>
+<ul>
+<li>Set the default group by field, it will show group by graph when querying in viewer.</li>
+</ul>
+</li>
+<li>Sum<ul>
+<li>If a field has group by, it allows you to select a number field to sum.</li>
+</ul>
+</li>
+<li>Order by<ul>
+<li>Set a field as order by field.</li>
+</ul>
+</li>
+<li>Set alias<ul>
+<li>Set Alias name to replace the label displayed in the viewer.</li>
+</ul>
+</li>
+<li>Filter<ul>
+<li>Specify AQL filter condition when querying data. Example: <code>Name like '%ABC%' or AssetTag like'123ABC%'</code></li>
+</ul>
+</li>
+<li>Sort fields<ul>
+<li>Adjust display order of fields.</li>
+</ul>
+</li>
+</ul>
+<h2 id="others">Others</h2>
+<ul>
+<li>Click each link title, AM schema side bar will address the table directly.</li>
+<li>Export view definition as json file.</li>
+<li>Share a view with guest users by sending a URL in email.</li>
+</ul>
+<blockquote>
+<p>Define <strong>My</strong> view with <code>CurrentUser</code> in AQL filter, e.g.: <code>Portfolio.User=CurrentUser</code>, then share it to guest users. They can query their own AM data.</p>
+</blockquote>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../../../start/lwtsso/" title="Light Weight SSO">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Light Weight SSO
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../graph/" title="Graph">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Graph
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>

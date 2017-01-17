@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>SAM - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Use <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        SAM
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Release Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="What's new" href="../../new/">
+      What's new
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Get Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Overview" href="../../overview/">
+      Overview
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Known issues" href="../../start/issues/">
+      Known issues
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Install</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../../sizing/introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../../sizing/sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../../sizing/deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../../sizing/rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../../sizing/appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../../sizing/appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../../sizing/appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../../sizing/appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../../sizing/appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Upgrade</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integrate</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="UCMDB" href="../adpater/">
+      UCMDB
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Administer</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Light Weight SSO" href="../../start/lwtsso/">
+      Light Weight SSO
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Use</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Viewer" href="../viewer/">
+      Viewer
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="SAM" href="./">
+      SAM
+    </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Effective License Positioning" href="#effective-license-positioning">
+                Effective License Positioning
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Product" href="#product">
+                Product
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Version" href="#version">
+                Version
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Computer" href="#computer">
+                Computer
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Usability" href="#usability">
+                Usability
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Troubleshoot</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Develop</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Icon Map" href="../..">
+      Icon Map
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+            <h1>SAM</h1>
+          
+          <p>Software Asset Management is an important feature of Asset Manager.
+In AM Browser you will find a simplified module that displays the SAM status dashboard. As show in the following sequence:</p>
+<blockquote>
+<p><em>Effective License Positioning (Vendor)</em> &gt; <em>Product</em> &gt; <em>Version</em> &gt; <em>Computer</em></p>
+</blockquote>
+<p><strong>Non-Compliance</strong> means the license consumption of the product/version is greater than the gained license right points. <strong>Over-Compliance</strong> means the license consumption of the product/version is smaller than the gained license right points.</p>
+<h2 id="effective-license-positioning">Effective License Positioning</h2>
+<ul>
+<li>Those software vendors which have software installed or license gained are listed in cards.</li>
+<li>Sorting by <strong>Non-Compliance</strong> or <strong>Over-Compliance</strong> is supported (<strong>Non-Compliance</strong> by default).</li>
+<li>Sorted items are colored in cards.</li>
+<li>You can click the card to switch to the product page.</li>
+</ul>
+<blockquote>
+<p><em>To note:  if the value of sorting items is zero, we ignore painting them.</em></p>
+<p><em>To note:  As a product may contain multiple versions, only when there are at least one version is</em> <strong>Over-Compliance</strong> <em>and no any version is</em> <strong>Non-Compliance<strong><em>, the product is</em> </strong>Over-Compliance</strong>.</p>
+</blockquote>
+<p><img alt="SAM screen shot" src="../img/sam1.png" /></p>
+<h2 id="product">Product</h2>
+<ul>
+<li>The software products of a vendor which have software installed or license purchased are listed in cards.</li>
+<li>Sorting by <strong>Non-Compliance</strong> or <strong>Over-Compliance</strong> is supported (<strong>Non-Compliance</strong> by default).</li>
+<li>Sorted items are colored in cards.</li>
+<li>You can click the card to switch to the version page.</li>
+</ul>
+<p><img alt="SAM screen shot" src="../img/sam2.png" /></p>
+<h2 id="version">Version</h2>
+<ul>
+<li>The versions of a product which have the version of software installed or corresponding license purchased are displayed in table mode.</li>
+<li>You can click a record to review the computers where this version of the software is installed.</li>
+</ul>
+<p><img alt="SAM screen shot" src="../img/sam3.png" /></p>
+<h2 id="computer">Computer</h2>
+<ul>
+<li>All computers where the particular version of software is installed are listed.</li>
+<li>Computer records are displayed in a pop-up window.</li>
+<li>Records are "grouped by" hardware type by default.</li>
+</ul>
+<p><img alt="SAM screen shot" src="../img/sam4.png" /></p>
+<blockquote>
+<p>Computers are not listed if the particular software is not installed on them.</p>
+</blockquote>
+<h2 id="usability">Usability</h2>
+<ul>
+<li><strong>Breadcrumb</strong></li>
+</ul>
+<p>On the top of page, there is a special breadcrumb, each entry of which is a dropdown menu instead of a simple link.<br />
+  By using the menu, AM Browser allows you to navigate to the last level of the vendor or switch among products easily.<br />
+  For instance, you are scanning AssetManager product purchased from vendor HP:</p>
+<p><img alt="SAM screenshot - breadcrumb" src="../img/sam5.png" /></p>
+<p>You can switch to other vendors of yours, for example, "<em>HP Discovery and Dependency Mapping Inventory</em>" or "<em>HP Network Node Manager i</em>."<br />
+  Moreover, you can change vendor at this level by simply selecting one from the vendor drop down menu.</p>
+<ul>
+<li><strong>Sort Menu</strong></li>
+</ul>
+<p>A sort menu is added on each card page, allowing you to sort vendors or products with some of their attributes.<br />
+  With this feature, you can sort them with the value of that contained attribute and emphasize them.<br />
+  By default, vendors are sorted with the attribute of <strong>Non-Compliance</strong> and products with <strong>Gap</strong>.</p>
+<ul>
+<li><strong>Search</strong></li>
+</ul>
+<p>Next to the sort menu, a search input is implemented enabling you to perfrom quick search for vendors or products.</p>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../viewer/" title="Viewer">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Viewer
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../myassets/" title="My Assets">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                My Assets
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>
