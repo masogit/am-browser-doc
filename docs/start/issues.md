@@ -1,6 +1,6 @@
 Below list known issues in AM Browser
 
-- Login user name is case sensitive
-- Public tabs in Insight only support sort by name
-- Export barcode feature only support in chrome
-- Prompts `Your current change are not saved, click confirm to drop the change` when admin access and leave Graphs `(AM Browser 1.0x)` first time without saving
+- Logon user name is case sensitive.
+- The records on the Public tabs of Insight can only be sorted by name.
+- Barcode can only be exported using Google Chrome.
+- When the first time an admin tries to leave the Graphs page, the message `Your current changes are not saved, click confirm to drop the change` pops up even if the admin did not make any change.
