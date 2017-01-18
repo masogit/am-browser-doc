@@ -1,7 +1,7 @@
 # Appendix B - Asset Manager Browser processing capability test results
 ### Introduction
 As an online transaction processing system, the peak processing capability are always concerned by most customers. The results below show the view capability of Asset Manager Browser with populated test data set.
-### Result Summary
+### Summary
 
 
 | User Scenario                                     | No. of Server Instances                                          |Process capability (peak hits per second)|
@@ -51,13 +51,13 @@ All tests were run on the following software set:
 
 
 
-### Setup and Tuning
+### Setup and tuning
 Tuning made before test:
 
 See "[appendix](appendix_c.md)" for more details.
 
 
-### Test Data
+### Test data
 Test data includes:
 
 | Table Name      | Size   | Record Count |
@@ -79,7 +79,7 @@ Test data includes:
 
 
 
-### Load Test Scenario Setting
+### Load test scenario setting
 * Test was executed for more than 10 minutes for each user count.
 * Detailed scenario setting:
 

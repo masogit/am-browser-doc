@@ -36,13 +36,13 @@ All tests were run on the following software set:
 * Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 64 bit Production
 
 
-### Setup and Tuning
+### Setup and tuning
 Tuning made before test:
 
 See "[appendix](appendix_c.md)" for more details.
 
 
-### Test Data
+### Test data
 Test data includes:
 
 | Table Name      | Size   | Record Count |
@@ -64,7 +64,7 @@ Test data includes:
 
 
 
-### Load Test Scenario Setting
+### Load test scenario setting
 - Test was executed for more than 80 minutes.
 - Detailed scenario setting:
 
@@ -87,14 +87,14 @@ Test data includes:
 ### Performance testing results
 **Summary test result:**
 
-|    Version                                                  | AM Breowser 1.1 |
+|    Version                                                  | AM Browser 1.1 |
 |-------------------------------------------------------------|-----------------|
 |    Maximum Running Vusers:                                  |    2,000        |
 |    Average Throughput   (bytes/second):                     |    4,079,885    |
 |    Average Hits per Second:                                 |    117.509      |
 |    No. of View Transaction processed                        |    12,000       |
 
-**Key Response Time:**
+**Key response time:**
 
 All the average response time are under 2 seconds.
 
