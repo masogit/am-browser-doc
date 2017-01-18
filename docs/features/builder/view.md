@@ -1,10 +1,10 @@
 # AM Browser View Builder
 
-AMB View is a lightweight component that presents AM data, Admin users may create and manage views in AMB Builder. Power users can query all views in AMB Viewer. Guests can access a view a URL that is shared by Admin users.
+AMB View is a lightweight component that presents AM data, Admin users may create and manage views in AMB Builder. Power users can query all views in AMB Viewer. Guests can access a view via a URL shared by Admin users.
 
 A view is created from AM schema (raw table), and a view only has one root table. All fields or links are related to the root table.  
 
-## Fields and Links
+## Fields and links
 Fields and links are selected from AMB Build Schema. When a root table is selected, it cannot be changed. Fields and links are split into 3 groups:
 
 - 1-M Links
@@ -65,7 +65,7 @@ The following functions take effect in each link (Root or 1-M link).
 ## Others
 
 - Click each link title, AM schema side bar will address the table directly.
-- Export view definition as json file.
+- Export view definition to a json file.
 - Share a view with guest users by sending a URL in email.
 
 > Define **My** view with `CurrentUser` in AQL filter, e.g.: `Portfolio.User=CurrentUser`, then share it to guest users. They can query their own AM data.

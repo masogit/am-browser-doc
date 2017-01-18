@@ -21,7 +21,7 @@ Admin user inputs aggregation AQL, like: `select seBasis, count(*) from amNature
 
 ### Preview
 
-After you input aggregation AQL, you can use Preview to get a query result. It should have some columns.
+After you input an aggregation AQL, you can use Preview to get a query result. It should have some columns.
 
 > It is suggested to have the first column as the group by field and the second column as `count(*)` or `sum(<field name>)`.
 
@@ -51,7 +51,7 @@ After you input aggregation AQL, you can use Preview to get a query result. It s
 
 ### Configure Graph designer
 
-After getting a query result table with some columns,  you can create a graph from the Graph designer. Specify value of the **Column** of Graph designer with one of columns in the query result table.
+After getting a query result table with some columns,  you can create a graph from the Graph designer. Specify the value of **Column** with one of columns in the query result table.
 
 #### Basic properties
 - **Column** (mandatory)
@@ -85,7 +85,7 @@ After getting a query result table with some columns,  you can create a graph fr
 
 ### Attached View
 
-Attach a graph with a View, then you can click an element. A page will pop up and show filtered records. You can input Field and select Value to configure the filter.
+Attach a graph with a view and then can click an element, a page will pop up and show filtered records. You can input Field and select Value to configure the filter.
 >If you input aggregation AQL, it will display some columns, **Value** is one of the columns.
 
 >**Field** is one of the columns in the View.
