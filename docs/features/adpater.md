@@ -73,6 +73,6 @@ browser_server = ucmdbhost
 browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
-> Disable Adapter feature by set adapter = **false**
+> You can disable Adapter feature by setting adapter = **false**
 
-When `GlobalId` field is added in the AMB view, on the detail page, you will see a link on GlobalId to open `UCMDB Browser`.
+When the `GlobalId` field is added in the AMB view, on the detail page, you will see a link on GlobalId to open `UCMDB Browser`.

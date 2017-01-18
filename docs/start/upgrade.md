@@ -17,8 +17,8 @@ AM Browser 1.1 supports both file DB and MongoDB to store the configuration data
 
 Make sure to correctly configure the connection parameter for both file DB folder and MongoDB, refer to section [Configuration](configuration/#database-configuration) for more information. Run the following script with administrator or root rights:
 
-- `db_migrate.bat` in window package
-- `db_migrate.sh` in linux package
+- `db_migrate.bat` in Windows package
+- `db_migrate.sh` in Linux package
 
 *The lines from command*
 ```
@@ -33,4 +33,4 @@ info: [Migrating] Mongodb localhost connected
 info: [Migrating] 42 record(s) already be imported successfully.
 ```
 
-> MongoDB migrating to file DB is not supported.
+> Migrating from MongoDB to file DB is not supported.
