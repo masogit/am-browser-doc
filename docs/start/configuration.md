@@ -121,14 +121,14 @@ browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
 
-Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
+Setting `adapter` to `false` will disable the UCMDB adapter monitor from AM Browser.
 
 > If AM REST Service does not configure the UCMDB connection, Adapter module of AM Browser will not work.
 
 ## Environment Parameters
 There are some system environment parameters used by AM Browser. The priority is: `Environment Parameters > am-browser-config.properties > am-browser-config.properties.default`
 
-Configure in different systems:
+Configuration in different systems:
 
 - Unix/Linux - `export AMB_XXX=XXX`
 - Windows - `set AMB_XXX=XXX`
@@ -157,14 +157,13 @@ See the json format file structured as below:
   - defaultIcon: define default icon
   - 'Key-value' pairs:
 
-      - The 'keys' are SQL name of tables existed in AM.
-      - 'value' part is bit complicated, but we will walk you through.  
-      It can be a string or an array. By string, you are defining a icon applies to the table. i.e.  
+      - The 'keys' are SQL name of the tables in AM.
+      - 'value' part is can be a string or an array. By inputting a string, you are defining a icon applies to the table. For example,  
 
 ```
           "amSoftInstall": "App".
 ```
-With an array as value, AM Browser enables you specifying icons to record level, for instance:
+By inputting an array, AM Browser enables you to specify icons at the record level, for example:
 
 ```
           "amExpenseLine": [
@@ -175,10 +174,10 @@ With an array as value, AM Browser enables you specifying icons to record level,
             }
           ],
 ```
-In above example:
+In this example:
 
 - "field": field name from AM
-- "like": operator, matching condition. You can input user type name directly, i.e. Yes for bAdminRight. Another operator available is "eq". Both of them can be string or array.
-- "icon": defines icon name. Those names are referenced from [Grommet Icon (version 1.1.0).](https://grommet.github.io/docs/icon)
+- "like": operator, matching condition. You can input user type name directly, for example, Yes for bAdminRight. Another operator available is "eq". Both of them can be string or array.
+- "icon": defines the icon name. Those names are referenced from [Grommet Icon (version 1.1.0).](https://grommet.github.io/docs/icon)
 
-> Restart AM Browser service to make modifications take effect.
+> Restart the AM Browser service to make modifications take effect.
