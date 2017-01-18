@@ -105,8 +105,8 @@ To create a Graph:
 
 > 3. Input Category to define the main menu item in the left side bar.
 
-> 4. Select options in Column, a Graph will be displayed (if there is no options, check the AQL). Then configure parameters for the Graph are displayed.
+> 4. Select options in Column, a Graph will be displayed (if there is no options, check the AQL). Then configure parameters for the Graph.
 
 > 5. Try these functions: Query, Save, Delete, Mail and Download.
 
-If you want to click the element of Graph to get a record list view, you should click Attached View, select a existing View and configure Field and Value.
+If you want to click the element of Graph to get a record list view, you can click Attached View, select a existing View and configure Field and Value.
