@@ -287,8 +287,8 @@
             </li>
           
             <li class="anchor">
-              <a title="Sample Asset Manager deployment diagram:" href="#sample-asset-manager-deployment-diagram">
-                Sample Asset Manager deployment diagram:
+              <a title="Typical Asset Manager deployment diagram:" href="#typical-asset-manager-deployment-diagram">
+                Typical Asset Manager deployment diagram:
               </a>
             </li>
           
@@ -595,7 +595,7 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="asset-manager-deployment-models">Asset Manager Deployment models</h1>
+          <h1 id="deployment-models">Deployment models</h1>
 <h3 id="standalone-mode">Standalone mode</h3>
 <p>The Asset Manager standalone model comprises only one Asset Manager Browser Server connecting with one Asset Manager REST Service. This is the simplest deployment model; you may consider it the base model.</p>
 <p><img alt="Standalone" src="../../img/sizing/AMB_1.1_Standalone.png" /></p>
@@ -610,7 +610,7 @@
 <p>A horizontal scaling implementation is typically used in large environments in which system scalability and resilience are concerned. A horizontal scaling implementation can support as many client connections as the sum of the individual Asset Manager instances can support. For example, if each instance can support 250 client connections and there are 4 instances, the system can support 1000 client connections. A horizontal scaling implementation has improved resilience features, such as the ability to stop and start the load balancer process without causing a total system outage and the ability to add a new servlet container process to a virtual group when the system is running.
 <br/>
 <br/></p>
-<h3 id="sample-asset-manager-deployment-diagram">Sample Asset Manager deployment diagram:</h3>
+<h3 id="typical-asset-manager-deployment-diagram">Typical Asset Manager deployment diagram:</h3>
 <p><img alt="All_in_one" src="../../img/sizing/AM_9.6.0_AIO_cl4.png" /></p>
 <p>In this diagram, the following events occur:</p>
 <p><img alt="purple" src="../../img/sizing/purple_rect.png" /></p>
@@ -634,7 +634,7 @@
 <li>The Asset Manager Automated Process Manager (amsrv, aka: APM Server) connects directly to the RDBMS server. There is no direct connection between the Asset Manager Windows GUI or Web Client and the Asset Manager Automated Process Manager.</li>
 </ul>
 <p><br/></p>
-<h1 id="asset-manager-browser-server-and-rest-server">Asset Manager Browser Server and Rest Server</h1>
+<h1 id="asset-manager-browser-server-and-rest-server">Asset Manager Browser Server and REST Server</h1>
 <p><strong>Minimum required reference configurations</strong></p>
 <table>
 <thead>
