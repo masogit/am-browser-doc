@@ -3,12 +3,12 @@ Note: All the web related application servers in this section, if not mentioned,
 ## Asset Manager Browser
 Asset Manager Browser is built on an embedded NodeJS server, which is more efficient than the conventional Asset Manager components.
 
-A standard Asset Manager Browser environment with 250 ~ 500 concurrent users requires approximately 4 GB of RAM.
+A standard Asset Manager Browser environment with 250 ~ 500 concurrent users requires approximately 2 GB of RAM.
 
 
 Concurrent User Count | Estimated Memory Usage
 ------------------| ------------------
-250 ~ 500         |     4 GB
+250 ~ 500         |     2 GB
 
 <br/>
 
