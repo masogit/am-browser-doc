@@ -47,9 +47,9 @@ pages:
 - Troubleshoot:
     - Troubleshooting: start/troubleshooting.md
     - FAQ: start/faq.md
-- Develop:
-    - Icon Map: index.md
-    - Blogs: blogs.md
+# - Develop:
+#     - Icon Map: index.md
+#     - Blogs: blogs.md
 
 theme_dir: 'material'
 # theme_dir: 'flatly'
