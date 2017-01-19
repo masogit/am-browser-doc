@@ -5,31 +5,31 @@ Before views can be accessed, they have to be defined by the Admin user first.
 
 Three types of users can use views:
 
-- Admin user who can create, modify, delete views and review the results of views.
-- Power user who only have read rights to the views defined by admin user.
-- Guest user who can access views through a URL, which is published by Admin or Power users.
+- Admin users who can create, modify, delete views and review the results of views.
+- Power users who only have read rights to the views defined by admin users.
+- Guest users who can access views through a URL, which is published by Admin or Power users.
 
-## WorkSpace
+## Work space
 
 The workspace of a view contains three major areas in the center area of the page:
 
-- Statistics Area
-- Header Menu
+- Statistics area
+- Header menu
 - Content
 
-> All settings made on a view will be saved in Web Browser's localStorage.  
+> All settings made on a view will be saved in web browser's local storage.  
 > Settings include order by, group by parameters and mode of topology, and so on.
 
 ### Statistics Area
 This area shows the statistics of the group by result. It shows the result in two modes:
 
  - Legend mode  
-    - Located in the left side panel of Content
-    - Shows a statistics list with grouped records, the quantity and the sum
-    - Can switch to distribution mode by clicking the button at the top right corner
+    - Located in the left side panel of Content.
+    - Shows a statistics list with grouped records, the quantity and the sum.
+    - Can be switched to the Distribution mode by clicking the button at the top right corner.
  - Distribution mode
-    - Shows statistics result in blocks and distribution way
-    - Can switch to Legend mode by clicking the button at the top right corner
+    - Shows statistics result in blocks
+    - Can be switched to the Legend mode by clicking the button at the top right corner
     - More details in the Distribution section
 
 ### Header menu
@@ -40,7 +40,7 @@ A header menu contains the following components:
     - Instant search
         - Type in a keyword and do not press Enter: AM Browser filters records in the loaded table or topology nodes according to the keyword you typed in.
     - Quick search
-        - Type in a keyword and press 'Enter': AM Browser filters from the back-end, it sends formed search query to AM web service to find the matched records. It refreshes table or topology nodes with returned results (**View must have defined searchable fields**)
+        - Type in a keyword and press 'Enter': AM Browser filters from the back-end, it sends formed search query to AM web service to find the matched records. It refreshes table or topology nodes with the returned results (**View must have defined searchable fields**)
     - Advanced search (Input AQL filters)
         - Available to Admin and Power user only.
         - Enable or disable this mode by clicking the toggle button or input '/' as the first character.
@@ -59,7 +59,7 @@ A header menu contains the following components:
 
 4. Group by filter menu
     - Aggregation - Display aggregation details, users can know which AM table is the view root. Aggregation type: count or sum.
-    - Order by - Display the default sequence.
+    - Order by - Display with the default sequence.
     - Query aggregation - You can click one field, query the aggregation data from the REST service, the result will be displayed in the Aggregation area. You can clear the aggregation result by clicking the field again.  
 
 5. Topology/List mode switch button  
@@ -110,8 +110,8 @@ Below the header menu is the content of the report data retrieved from AM web se
  ![Viewer screen shot](img/detail1.png)
 
 #### Topology mode
-- Display a map of links
-- Display each record as a node with an equipment type icon and description text
+- This mode displays a map of links
+- This mode displays each record as a node with an equipment type icon and description text
 
   ![Viewer screenshot in topology mode](img/viewer2.png)
 

@@ -18,7 +18,7 @@ There are two modes to present a report:
 
 - Flat (default): Graphs are displayed on a single page as per designed layout.
 
-- Carouse: Graphs are automatically displayed one by one every 10 seconds.
+- Carousel: Graphs are automatically displayed one by one every 10 seconds.
 
 If the interval (10 seconds) is too long to you, click the arrow button to switch to the next graph manually.
 
@@ -41,14 +41,14 @@ To remove a category, in the Edit mode, click the **X** button.
 
 
 
-In the Edit mode, you can create a flexible layout. Each block can be split by row or column. You can attach a Graph in each separated sector.
+In the Edit mode, you can create a flexible layout. Each block can be split into rows or columns. You can attach a Graph in each separated section.
 
 - Split row
 - Split column
 - Attach a Graph
 - Remove last element
 
- >Removing a function will remove its attached Graph or the last block. Block cannot remove itself.
+ >Removing a function will remove its attached Graph or the last block. A block cannot remove itself.
 
 
 
@@ -56,17 +56,17 @@ In the Edit mode, you can create a flexible layout. Each block can be split by r
 
 In the Edit mode, you can attach a Graph to any block that does not have a sub block in layout.
 
- Graphs are created in `Graph module` by AMB Admin.
+ Graphs are created in `Graph module` by AMB Admins.
 
 
 
 ## Single Graph view
 
-To review a graph with more details, click the enlarge button ![enlarge button](img/enlarge-btn.png) to enter the expanded mode.
+To review a graph with more details, click the expand button ![enlarge button](img/enlarge-btn.png) to enter the expanded mode.
 In the expanded mode, AM Browser shows you the graph with a table of records.
 
 ## Graph Item view
-Click a Graph item, you will get a Record list view to display this item with details. If you continue to click a record, you will get a view with more details.
+Click a Graph item, you will get a Record list view to display this item with details. If you click one of the records, you will get a view with more details.
 
 ## Example
 
@@ -75,7 +75,7 @@ To do this, you need to go to the builder to create a graph first, and then foll
 ![Viewer screen shot](img/edit_view.PNG)
 > 1.Before attaching the graph, make sure the graph exists, and it is defined properly.
 
->2.Decide where you want to put the graph, Public or Self, and if you want to use n existing category or create a new one.
+>2.Decide where you want to put the graph, Public or Self, and if you want to use an existing category or create a new one.
 
 >3.Click Add to create a flexible layout.
 

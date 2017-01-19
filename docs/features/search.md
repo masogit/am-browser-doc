@@ -2,7 +2,7 @@
 
 Global search is also the homepage of AM Browser. If an Admin user has defined views with search fields, global search is enabled.
 
-AM Browser searches in all views that have search fields configured on the root table. Search results are displayed in Card/Tile style.
+AM Browser searches in all views that have search fields configured on the root table. Search results are displayed in Card or Tile style.
 
 ## Search for a field
 - Input at least 3 characters.

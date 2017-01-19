@@ -1,6 +1,6 @@
 
 Software Asset Management is an important feature of Asset Manager.
-In AM Browser you will find a simplified module that displays the SAM status dashboard. As show in the following sequence:
+In AM Browser you will find a simplified module that displays the SAM status dashboard, as shown in the following sequence:
 
 >  *Effective License Positioning (Vendor)* > *Product* > *Version* > *Computer*
 
@@ -13,7 +13,7 @@ In AM Browser you will find a simplified module that displays the SAM status das
 - Sorted items are colored in cards.
 - You can click the card to switch to the product page.
 
->   *To note:  if the value of sorting items is zero, we ignore painting them.*
+>   *To note:  If the number of sorting items is zero, nothing will be colored.*
 
 >   *To note:  As a product may contain multiple versions, only when there are at least one version is* **Over-Compliance** *and no any version is* **Non-Compliance***, the product is* **Over-Compliance**.
 
@@ -31,35 +31,35 @@ In AM Browser you will find a simplified module that displays the SAM status das
 
 ## Version
 
-- The versions of a product which have the version of software installed or corresponding license purchased are displayed in table mode.
+- The versions of a software product that are installed or license gained are displayed in table mode.
 - You can click a record to review the computers where this version of the software is installed.
 
 ![SAM screen shot](img/sam3.png)
 
 ## Computer
 
-- All computers where the particular version of software is installed are listed.
+- All computers where a particular version of software is installed are listed.
 - Computer records are displayed in a pop-up window.
 - Records are "grouped by" hardware type by default.
 
 ![SAM screen shot](img/sam4.png)
 
->  Computers are not listed if the particular software is not installed on them.
+>  A computer is not listed if the particular software is not installed on it.
 
 ## Usability
 
 - **Breadcrumb**
 
-  On the top of page, there is a special breadcrumb, each entry of which is a dropdown menu instead of a simple link.  
+  On the top of the page, there is a special breadcrumb, each entry of which is a drop-down menu instead of a simple link.  
   By using the menu, AM Browser allows you to navigate to the last level of the vendor or switch among products easily.  
-  For instance, you are scanning AssetManager product purchased from vendor HP:
+  For instance, you are scanning the Asset Manager product purchased from vendor HP:
 
   ![SAM screenshot - breadcrumb](img/sam5.png)
 
   You can switch to other vendors of yours, for example, "*HP Discovery and Dependency Mapping Inventory*" or "*HP Network Node Manager i*."  
-  Moreover, you can change vendor at this level by simply selecting one from the vendor drop down menu.
+  Moreover, you can change vendor at this level by simply selecting one from the vendor drop-down menu.
 
-- **Sort Menu**
+- **Sort menu**
 
   A sort menu is added on each card page, allowing you to sort vendors or products with some of their attributes.  
   With this feature, you can sort them with the value of that contained attribute and emphasize them.  
