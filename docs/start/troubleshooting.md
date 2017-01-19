@@ -10,9 +10,9 @@ In case `http://<node_server_ip>:8888` does not work:
 If you do not see the following messages in the log files, the `HPE am-browser-service` service is not installed correctly and you may try to re-install the service.
 
 ```
-{"level":"info","message":"[server] Set db folder to ./db","timestamp":"2016-07-08T06:07:03.827Z"}
-{"level":"info","message":"[server] App listening HTTPS on port 8443","timestamp":"2016-07-08T06:07:03.876Z"}
-{"level":"info","message":"[server] App listening HTTP on port 8888","timestamp":"2016-07-08T06:07:03.876Z"}
+{"level":"info","message":"[server] Set db folder to ./db","timestamp":"date time"}
+{"level":"info","message":"[server] App listening HTTPS on port 8443","timestamp":"date time"}
+{"level":"info","message":"[server] App listening HTTP on port 8888","timestamp":"date time"}
 ```
 
 ## AM REST server
@@ -35,17 +35,17 @@ Message types are as follows:
     - User token of AM REST service expired
     - Authentication problems
     - Saved View / Graph / Insight is invalid
-    - Retrieve data from AM REST service failed
+    - Retrieving data from AM REST service failed
 - Success
-    - Create, update, delete data (View / Graph / Insight) successfully
-    - Send message to Slack successfully
+    - Creating, updating, deleting data (View / Graph / Insight) successfully
+    - Sending message to Slack successfully
 - Warning
     - Preview AQL in Graph module, get unexpected data (Column between head and row inconsistent)
 - Confirmation
     - Alert confirm window before create, update or delete data
     - Duplicate view or New Graph
 
-> Error, Warning or Success message box will display 5 seconds by default. Click it to close.
+> Error, Warning or Success message box will be displayed 5 seconds by default. Click it to close.
 
 ## Service Logs
 Log file folders
