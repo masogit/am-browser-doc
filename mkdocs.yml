@@ -9,11 +9,9 @@ pages:
 - Home: index.md
 - Release Notes:
     - What's new: new.md
-- Get Started:
-    - Overview: overview.md
     - Known issues: start/issues.md
-- Install:
-    - Installation: start/installation.md
+- Get Started: 
+    - Overview: overview.md
     - Security: start/security.md
     - Sizing Guide:
         - Introduction: sizing/introduction.md
@@ -25,8 +23,8 @@ pages:
         - Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark : sizing/appendix_c.md
         - Appendix D - Database volume size of sample deployment : sizing/appendix_d.md
         - Appendix E - Links : sizing/appendix_e.md
-- Upgrade:
-    - Upgrade and Migration: start/upgrade.md
+- Install: start/installation.md
+- Upgrade: start/upgrade.md
 - Integrate:
     - UCMDB: features/adpater.md
     - Slack: slack.md
@@ -43,13 +41,9 @@ pages:
     - Viewer: features/viewer.md
     - SAM: features/sam.md
     - My Assets: features/myassets.md
-    - Adapter: features/adpater.md
 - Troubleshoot:
     - Troubleshooting: start/troubleshooting.md
     - FAQ: start/faq.md
-# - Develop:
-#     - Icon Map: index.md
-#     - Blogs: blogs.md
 
 theme_dir: 'material'
 # theme_dir: 'flatly'
@@ -62,6 +56,3 @@ extra:
   logo: 'logo.svg'
   palette:
     primary: 'Teal'
-#   author: 
-#     github: 'masogit'
-#     twitter: 'manshuo'
